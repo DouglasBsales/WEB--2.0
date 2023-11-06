@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+
+        body{
+            background:#202020;
+        }
+
+       .container{
+        width:920px;
+        display:flex;
+       }
+
+       .noticias{
+        width:600px;
+        background:#fff;
+        border-radius:20px;
+        margin:10px;
+       }
+
+       @media (max-width: 935px){
+        .container{
+            flex-direction:column;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="noticias">
+            <h1>Noticia urgente</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quia sunt voluptatem! Deserunt consequuntur dolorum hic laborum quidem enim eius distinctio ipsam, numquam, reprehenderit error, veniam voluptatem soluta eligendi porro. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus exercitationem voluptates, nihil repellat perferendis commodi quidem possimus quo assumenda aliquid est ex autem aliquam officia aspernatur explicabo non reiciendis suscipit?</p>
+        </div>
+
+        <div class="noticias">
+            <h1>Noticia urgente 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quia sunt voluptatem! Deserunt consequuntur dolorum hic laborum quidem enim eius distinctio ipsam, numquam, reprehenderit error, veniam voluptatem soluta eligendi porro. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus exercitationem voluptates, nihil repellat perferendis commodi quidem possimus quo assumenda aliquid est ex autem aliquam officia aspernatur explicabo non reiciendis suscipit?</p>
+        </div>
+
+        <div class="noticias">
+            <h1>Noticia urgente 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quia sunt voluptatem! Deserunt consequuntur dolorum hic laborum quidem enim eius distinctio ipsam, numquam, reprehenderit error, veniam voluptatem soluta eligendi porro. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus exercitationem voluptates, nihil repellat perferendis commodi quidem possimus quo assumenda aliquid est ex autem aliquam officia aspernatur explicabo non reiciendis suscipit?</p>
+        </div>
+    </div>
+</body>
+</html>

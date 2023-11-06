@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding:0;   
+}
+body{
+    background-image: url(arquivos-necessarios-projetos-unes/fundo2.png);
+}
+
+header img{
+    margin-left:343px;
+    margin-top:30px;
+}
+
+nav{
+    display:flex;
+    float:right;
+    margin-top:50px;
+    margin-right:345px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#383F5D;
+    margin-right:30px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+.imagem{
+    margin-left:18%;
+    margin-top:30px;
+}
+
+.imagem img{
+    width:1200px;
+}
+
+main h2{
+    margin-left:343px;
+    margin-top:30px;
+}
+
+main p{
+    text-align:justify;
+    margin-left:343px;
+    margin-top:30px;
+}
+
+#rodape{
+    margin-left:45%;
+}
