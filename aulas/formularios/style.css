@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+ label{
+    font-weight:bold;
+    cursor:pointer;
+}
+
+fieldset{
+    width:600px;
+    margin-bottom:20px;
+    border:1px solid rgba(0, 0, 0, 0.295);;
+}
+
+#detalhes-contato input{
+    margin-bottom:10px;
+    margin-top:5px;
+    height:30px;
+    width:200px;
+    border-radius:10px;
+    padding-left:10px;
+    border:1px solid rgba(0, 0, 0, 0.267);
+}
+
+#detalhes-contato input:focus{
+    outline:1px solid rgb(0, 174, 255);
+}
+
+#mensagem textarea{
+    width:400px;
+    margin-top:5px;
+}
+
+textarea:focus{
+    border:2px solid rgb(0, 174, 255);
+    outline:none;
+}
+
+#lembrar-de-mim label{
+    font-weight:lighter;
+}
+
+#button input{
+    width:100px;
+    height:40px;
+    margin-left:13%;
+    font-size:20px;
+    border-radius:10px;
+    border:1px solid rgba(0, 0, 0, 0.5);
+}
+
+#button input:hover{
+    border:1px solid rgb(0, 174, 255);
+}
+
+
