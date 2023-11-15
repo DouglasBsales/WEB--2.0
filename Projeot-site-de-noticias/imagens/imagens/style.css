@@ -9,6 +9,10 @@ body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#home .home, #brasil .brasil {
+    background:#E10037;
+}
+
 header{
     background:url('fundo.png') repeat-x;
     height:233px;
@@ -37,7 +41,7 @@ header{
     list-style-type:none;
     margin-top:30px;
     border:2px solid #800a3f;
-    width:586px;
+    width:797px;
 }
 
 .topo ul li{
@@ -114,6 +118,13 @@ main{
     width:340px;
     margin:10px 5px; 
     float:left;
+    background:url('fundo-caixa.png');
+}
+
+#brasil .conteudo-principal{
+    width:698px;
+    margin:10px 5px; 
+    float:right;
     background:url('fundo-caixa.png');
 }
 
@@ -212,6 +223,13 @@ main{
     background:url('fundo-caixa.png');
 }
 
+#brasil .conteudo-lateral-2{
+    width:190px;
+    clear:left;
+    margin:10px;
+    background:url('fundo-caixa.png');
+}
+
 .conteudo-lateral-2 h1{
     color:#fff;
     background-color:#28496D;
@@ -253,6 +271,13 @@ input:focus{
     background: url('fundo-caixa.png');
 }
 
+#brasil .conteudo-principal-2{
+    width:698px;
+    margin:10px 5px;
+    float:right;
+    background: url('fundo-caixa.png');
+}
+
 .conteudo-principal-2 h1{
     color:#fff;
     background-color:#28496D;
@@ -270,6 +295,12 @@ input:focus{
     width:35%;
     margin:10px;
     float:left;
+    border:3px solid rgba(128, 128, 128, 0.247);
+}
+
+#brasil .conteudo-branco ul li img{
+    width:13%;
+    margin:10px;
     border:3px solid rgba(128, 128, 128, 0.247);
 }
 
