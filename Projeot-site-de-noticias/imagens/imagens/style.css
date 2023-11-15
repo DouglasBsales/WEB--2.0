@@ -337,9 +337,18 @@ input:focus{
     font-size:13px;
 }
 
-#brasil, #fotos .conteudo-branco ul li a{
+#brasil .conteudo-branco ul li a{
     display:inline-block;
-    margin:20px 10px 10px 10px;
+    margin:20px 10px 10px;
+    text-decoration:none;
+    color:#2997FF;
+    text-transform: uppercase;
+    font-size:13px;
+}
+
+#fotos .conteudo-branco ul li a{
+    display:inline-block;
+    margin:20px 10px 10px;
     text-decoration:none;
     color:#2997FF;
     text-transform: uppercase;
