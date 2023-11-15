@@ -9,7 +9,9 @@ body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#home .home, #brasil .brasil , #fotos .fotos{
+#home .home, 
+#brasil .brasil, 
+#fotos .fotos{
     background:#E10037;
 }
 
@@ -96,12 +98,13 @@ main{
     text-decoration:none;
     color:black;
     display:block;
-    padding-left:25px;
+    padding-left:5px;
 }
 
 .conteudo-lateral ul li a:hover{
     background:url('marcador.png') no-repeat left center;
     color:rgba(0, 0, 0, 0.301);
+    padding-left:25px;
 }
 
 
