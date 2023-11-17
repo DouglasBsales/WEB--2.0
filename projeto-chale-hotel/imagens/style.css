@@ -111,7 +111,6 @@ header ul li a:hover{
 main{
     width:65%;
     margin:10px auto;
-    border:1px solid red;
     min-width:780px;
     background: url('imagens/bg-container.png') top center repeat-Y;
 }
@@ -136,7 +135,6 @@ main .conteudo-dentro{
 main .conteudo-2{
     width:50%;
     float:right;
-    
 }
 
 main .conteudo-lista{
@@ -156,8 +154,13 @@ main .conteudo-lista ul li a{
     display:block;
     text-decoration:none;
     clear:left;
-    padding-bottom:49px;
+    padding:10px;
+    padding-bottom:39px;
     border-bottom:1px solid #fff;
+}
+
+main .conteudo-lista ul li a:hover{
+    background:#fcf4be4b;
 }
 
 main .conteudo-lista ul li a h1{
