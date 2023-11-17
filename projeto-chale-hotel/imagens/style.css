@@ -113,13 +113,13 @@ main{
     margin:10px auto;
     border:1px solid red;
     min-width:780px;
+    background: url('imagens/bg-container.png') top center repeat-Y;
 }
 
 
 main .conteudo-1{
     width:50%;
     float:left;
-    background: url('imagens/bg-container.png');
 }
 
 main .conteudo-1 h1{
@@ -136,7 +136,7 @@ main .conteudo-dentro{
 main .conteudo-2{
     width:50%;
     float:right;
-    background: url('imagens/bg-container.png') right center;
+    
 }
 
 main .conteudo-lista{
@@ -146,7 +146,7 @@ main .conteudo-lista{
 
 
 main .conteudo-lista ul li a img{
-    width:170px;
+    width:140px;
     margin:12px 0px;
     border:2px solid #FCF4BE;
     float:left;
@@ -174,4 +174,19 @@ main .conteudo-lista ul li a p{
     left:10px;
     top:5px;
     color:black;
+}
+
+.clear{
+    clear:both;
+}
+
+footer{
+    width:65%;
+    margin:0 auto;
+   
+}
+
+footer h1{
+    font-size:20px;
+    color:#A9A056;
 }
