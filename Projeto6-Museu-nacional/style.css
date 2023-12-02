@@ -95,8 +95,8 @@ main .conteudo-2{
 
 main .container-2{
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 main .container-2 .box{
@@ -104,7 +104,6 @@ main .container-2 .box{
     display: flex;
     flex-direction: column;
     width: 300px;
-    margin-left: 10px;
 }
 
 main .container-2 .caixa-2 {
@@ -188,7 +187,7 @@ main .container-2 .conteudo-lateral .galeria-fotos{
     background-color: #EDE5DF;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 main .container-2 .conteudo-lateral .galeria-fotos #conteudo-fotos{
@@ -238,6 +237,16 @@ main .container-2 .content-2 p{
     margin-left: 40px;
     text-align: justify;
     padding-right: 40px;
+}
+
+main .container-2 .content-2 a{
+    color: rgba(194, 129, 9, 0.986);
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+main .container-2 .content-2 a:hover{
+    text-decoration: underline;
 }
 
 main .container-2 .content-2 #relative-h1{
