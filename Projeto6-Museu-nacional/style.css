@@ -324,7 +324,7 @@ button.icon:hover{
     border: none;
 }
 
-nav .icon i{
+nav .icon .icon1{
     display: none;
 }
 
@@ -375,9 +375,7 @@ nav.mobile-menu ul li a:hover{
             display: none;
     }
     
-    nav .icon i{
-        color: #fff;
-        font-size: 60px;
+    nav .icon .icon1{
         cursor: pointer;
         margin-left: 30px;
         display: block;
