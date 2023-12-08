@@ -330,7 +330,7 @@ nav .icon i{
 
 nav.mobile-menu ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     list-style: none;
 }
 
