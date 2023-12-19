@@ -24,21 +24,56 @@
 
     <h2>Barra de navegação simples</h2>
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <a href="#" class="navbar-brand">Chalé hotel</a>
 
 
-        <ul class="navbar-nav m-auto nav-pills">
+        <ul class="navbar-nav m-auto">
             <li class="nav-item">
-                <a href="#" class="nav-lin">Home</a>
+                <a href="#" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link active">Products</a>
+                <a href="#" class="nav-link">Products</a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">user</a>
             </li>
         </ul>
+    </nav>
+
+        <h2>Barra de navegação com menu responsivo</h2>
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+            <a href="#" class="navbar-brand">Chalé hotel</a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Config</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">User</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <h2>Barra de navegação com fomrulário</h2>
 
 </body>
 
