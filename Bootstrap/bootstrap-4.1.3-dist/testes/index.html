@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste navbar - Bootstrap</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md navbar-light bg-success">
+        <a href="#" class="navbar-brand"> Spotify</a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu"> 
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse pt-3" id="menu">
+
+            <ol class="breadcrumb m-auto bg-success">
+                <li class="breadcrumb-item ">
+                    <a href="#" class="text-dark">Home</a>
+                </li>
+
+                <li class="breadcrumb-item dropdown">
+                    <a href="#" class="dropdown-toggle text-dark" data-toggle="dropdown" >Products</a>
+
+                    <div>
+                        <ul class="dropdown-menu ">
+                            <li class="dropdown-item">
+                                <a href="#">iPhones</a>
+                                <span class="badge badge-success ml-3">10 modelos</span>
+                               
+                            </li>
+
+                            <div class="dropdown-divider"></div>
+
+                            <li class="dropdown-item">
+                                <a href="#">Fones</a>
+                                <span class="badge badge-success ml-3">50 unidades</span>
+                            </li>
+
+                            <div class="dropdown-divider"></div>
+
+                            <li class="dropdown-item">
+                                <a href="#">Smartwatchs</a>
+                                <span class="badge badge-success ml-3">10 modelos</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+
+                <li class="breadcrumb-item">
+                    <a href="#" class="text-dark">Config</a>
+                </li>
+
+                <li class="breadcrumb-item">
+                    <a href="#" class="text-dark">user</a>
+                </li>
+                
+                <li class="breadcrumb-item active d-none">Douglas Sales</li>
+
+            </ol>
+        </div>
+     </nav>
+
+
+
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<script src="../js/bootstrap.min.js"></script>
+
+</html>
