@@ -12,9 +12,9 @@ function menuShow(){
     showMenu = document.querySelector('.menu-mobile');
         if(showMenu.classList.contains('open')){
             showMenu.classList.remove('open')
-            document.querySelector('.icone').src = ('imagens/menu.svg');
+            document.querySelector('.icone').src =('imagens/menu-dark.svg');
         } 
         else {(showMenu.classList.add('open'))
-        document.querySelector('.icone').src = ('imagens/x.svg');
+        document.querySelector('.icone').src =('imagens/close-dark.svg');
     }
 }
