@@ -4,17 +4,6 @@ function buttonShow(){
         showButton.classList.remove('open');
     }
     else {
-        (showButton.classList.add('open'))
-    }
-}
-
-function menuShow(){
-    showMenu = document.querySelector('.menu-mobile');
-        if(showMenu.classList.contains('open')){
-            showMenu.classList.remove('open')
-            document.querySelector('.icone').src = ('imagens/menu.svg');
-        } 
-        else {(showMenu.classList.add('open'))
-        document.querySelector('.icone').src = ('imagens/x.svg');
+        showButton.classList.add('open')
     }
 }
