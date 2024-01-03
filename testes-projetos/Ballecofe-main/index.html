@@ -12,7 +12,7 @@
     <header>
 
         <div id="container-header">
-            <h1>Ballecofe</h1>
+            <h1></h1>
 
             <nav>
                 <ul>
@@ -34,17 +34,43 @@
 
             <p>Github</p>
 
-            <button>
-                <i class="bi bi-list"></i>
+            <button class="dark-mode">
+                <a href="index-light.html">
+                    <img src="imagens/lampada-light.png" alt="" class="lampada">
+                </a>
+            </button>
+
+            <button onclick="menuShow()">
+                <img src="imagens/menu-dark.svg" alt="" class="icone">
             </button>
         </div>
     </header>
+
+    <div class="menu-mobile">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Receitas</a>
+                </li>
+                <li>
+                    <a href="#">Novidades</a>
+                </li>
+                <li>
+                    <a href="#">Melhor avaliadas</a>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
 
     <main>
         <section id="container-inicial">
             <article class="conteudo-inicial">
 
-                <p>
+                <p style="margin-top: 20px;">
                     Novidade
                 </p>
 
@@ -54,7 +80,7 @@
                 <hr>
 
                 <p id="explore">
-                    Explore dezenas de variações da bebida favorita <br> entre os devs ao redor mundo!
+                    Explore dezenas de variações da bebida favorita <br> entre os <strong>devs</strong> ao redor do mundo!
                 </p>
             </article>
 
@@ -86,14 +112,14 @@
             </div> <!-- Fim da div container imagens-->
         </section>
 
-        <div class="botao">
-            <button class="button-down" onclick="buttonShow()">
-                <img src="imagens/Button.svg" alt="">
-            </button>
-        </div>
-
         <section class ="receitas">
             <article class="conteudo-receitas">
+
+                <div class="botao">
+                    <button class="button-down" onclick="buttonShow()">
+                        <img src="imagens/Button.svg" alt="">
+                    </button>
+                </div>
 
                     <p>
                         Receitas
@@ -199,5 +225,5 @@
     
 </body>
 
-<script src="script.js"></script>
+<script src="script-dark.js"></script>
 </html>

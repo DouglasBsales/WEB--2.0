@@ -22,18 +22,41 @@ header{
     width: 100%;
     height: 68px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-color: #1F1517;
+}
+
+#light header{
+    width: 100%;
+    display: flex;
+    background-color: #fff;
 }
 
 header h1{
     width: 141px;
     height: 21px;
-    text-indent: -3000px;
     background: url('imagens/Logo.png');
+}
+
+#light header h1{
+    width: 126px;
+    height: 17px;
+    color: #1F2937;
+    font-size: 24px;
+    margin-top: -7px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header p{
     color: #FFF2E7;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+#light header p{
+    color: #4B5563;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
 }
@@ -52,31 +75,128 @@ nav ul{
     font-weight: 500;
 }
 
-nav ul li a{
+header nav ul li a{
     display: block;
     padding: 0px 15px;
     color: #fff2e777;
 }
 
-nav ul li a:hover{
+#light header nav ul li a{
+    display: block;
+    padding: 0px 15px;
+    color: #6B7280;
+}
+
+ nav ul li a:hover{
     color: #FFF2E7;
+}
+
+#light nav ul li a:hover{
+    color: #4B5563;
+}
+
+.menu-mobile{
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: flex-end;
+    display: none;
+    position: relative;
+}
+
+
+.menu-mobile ul {
+    display: flex;
+    width: 150px;
+    background-color: #A45A49;
+    flex-direction: column;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 75%;
+    z-index: 1;
+}
+
+.menu-mobile ul li{
+    padding: 15px 0px;
+}
+
+.menu-mobile ul li a {
+    color: #fff;
+    padding: 0px 10px;
+}
+
+.menu-mobile ul li a:hover {
+    color: #1F2937;
+    padding: 0px 10px;
+}
+
+
+#light .menu-mobile ul {
+    display: flex;
+    width: 150px;
+    background-color: #F59E0B;
+    flex-direction: column;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 75%;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+}
+
+#light .menu-mobile ul li{
+    padding: 15px 0px;
+}
+
+#light .menu-mobile ul li a {
+    color: #fff;
+    padding: 0px 10px;
+}
+
+#light .menu-mobile ul li a:hover{
+    color: #1F2937;
 }
 
 header button{
     background: transparent;
     border: none;
 }
-header button i{
-    font-size: 50px;
-    color: #fff;
+
+header button .icone{
+    width: 50px;
     display: none;
     cursor: pointer;
+}
+
+#light header button .icone{
+    width: 50px;
+    color: #1F2937;
+    display: none;
+    cursor: pointer;
+}
+
+#light .lampada{
+    width: 30px;
+    cursor: pointer;
+}
+
+.lampada{
+    width: 30px;
+    margin-right: -40px;
+    cursor:pointer;
 }
 
 main{
     width: 100%;
     background-color: #181012;
 }
+
+#light main{
+    width: 100%;
+    background-color: #F3F4F6;
+}
+
 
 section#container-inicial{
     width: 75%;
@@ -99,9 +219,22 @@ article.conteudo-inicial{
     font-size: 14px;
 }
 
+#light .conteudo-inicial p{
+    font-family: 'Epilogue', sans-serif;
+    color: #D97706;
+    font-size: 14px;
+}
+
 .conteudo-inicial h1{
     font-size: 56px;
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#light .conteudo-inicial h1{
+    font-size: 56px;
+    color: #1F2937;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
@@ -112,12 +245,24 @@ hr{
     border-color: #A45A49;
 }
 
+#light hr{
+    width: 240px;
+    margin-top: 20px;
+    border-color: #F59E0B;
+}
+
 .conteudo-inicial #explore{
     color: #C7BAB3;
     font-size: 20px;
     font-family: 'Inter', sans-serif;
     margin-top: 20px;
-    text-transform: uppercase;
+}
+
+#light .conteudo-inicial #explore{
+    color: #64748B;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    margin-top: 20px;
 }
 
 #container-imagens{
@@ -140,15 +285,35 @@ hr{
     flex-wrap: wrap;
 }
 
+#light .receitas{
+    background-color: #F9FAFB;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 .conteudo-receitas{
     width: 75%;
     margin: 0 auto;
 }
 
+.conteudo-central-receitas{
+    display: flex;
+    flex-direction: column;
+}
+
 .botao{
-    width: 75%;
-    margin: 0 auto;
-    margin-bottom: 10px;
+    width: 10%;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#light .botao{
+    width: 10%;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 
 .button-down{
@@ -165,9 +330,32 @@ article.conteudo-receitas p{
     margin-top: 10px;
 }
 
+#light article.conteudo-receitas #receitas{
+    font-family: 'Epilogue', sans-serif;
+    color: #D97706;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+#light article.conteudo-receitas p{
+    font-family: 'Epilogue', sans-serif;
+    color: #D1D5DB;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
 article.conteudo-receitas h1{
     font-size: 32px;
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#light article.conteudo-receitas h1{
+    font-size: 32px;
+    color: #374151;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
@@ -176,6 +364,14 @@ article.conteudo-receitas #info-titulo{
     color: #C7BAB3;
     font-size: 18px;
     font-family: 'Inter', sans-serif;
+    text-transform: none;
+}
+
+#light article.conteudo-receitas #info-titulo{
+    color: #6B7280;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    text-transform: none;
 }
 
 .container-receitas{
@@ -195,8 +391,22 @@ article.conteudo-receitas #info-titulo{
     background-color: #241A1C;
 }
 
+#light .info-receitas{
+    width: 560px;
+    margin: 30px 0px;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
 .info-receitas #em-alta{
     color: #E7A80E;
+    font-size: 14px;
+}
+
+#light .info-receitas #em-alta{
+    color: #D97706;
     font-size: 14px;
 }
 
@@ -208,8 +418,23 @@ article.conteudo-receitas #info-titulo{
     align-items: baseline;
 }
 
+#light .info-receitas .title-receitas{
+    font-size: 20px;
+    color: #1F2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 .info-receitas span{
     color: #756A67;
+    font-family: 'Inter', sans-serif;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+#light .info-receitas span{
+    color: #9CA3AF;
     font-size: 16px;
     font-family: 'Inter', sans-serif;
 }
@@ -220,6 +445,13 @@ article.conteudo-receitas #info-titulo{
     text-transform: none;
     margin-top: 20px;
     
+}
+
+#light .info-receitas .feedback{
+    color: #6B7280;
+    font-size: 16px;
+    text-transform: none;
+    margin-top: 20px; 
 }
 
 .container-avatar{
@@ -239,6 +471,15 @@ article.conteudo-receitas #info-titulo{
     margin-left: 10px;
     margin-bottom: 3px;
 }
+
+#light .info-receitas .text-avatar{
+    font-size: 14px;
+    color: #6B7280;
+    text-transform: none;
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
 
 .receitas #carregar-receitas{
     color: #C7BAB3;
@@ -260,8 +501,27 @@ footer{
     padding: 40px 0px;
 }
 
+
+#light footer{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 40px 0px;
+}
+
 footer p{
     color: #fff;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 10px;
+}
+
+#light footer p{
+    color: #9CA3AF;
     font-family: 'Inter', sans-serif;
     padding-bottom: 10px;
 }
@@ -274,6 +534,7 @@ footer #last{
 
 .open{
     display: flex;
+    transition: 0.5s ease-in-out;
 }
 
 @media (max-width: 1910px){
@@ -282,7 +543,11 @@ footer #last{
     }
 
     #container-imagens{
-        padding-bottom: 50px;
+        padding-bottom: 5px;
+    }
+
+   .conteudo-central-receitas{
+        align-items: center;
     }
 }
 
@@ -299,19 +564,33 @@ footer #last{
     }
 }
 
-
 @media (max-width: 598px){
     #container-imagens{
         justify-content: center;
+        padding-bottom: 20px;
     }
+
+    #light .menu-mobile ul{
+        left: 55%;
+    }
+
+    .menu-mobile ul{
+        left: 55%;
+    }
+
 }
 
 @media (max-width: 990px){
-    nav{
+   
+    header nav{
         display: none;
     }
 
-    header button i{
+    header button .icone{
+        display: block;
+    }
+
+    #light header button .icone{
         display: block;
     }
 
