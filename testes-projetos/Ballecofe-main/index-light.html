@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballecofe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+<body id="light">
+    
+    <header>
+
+        <div id="container-header">
+            <h1 style="display: flex;"> <span style="color: #F59E0B">&lt;</span> 
+                CODFEE <span style="color: #F59E0B">/></span> </h1>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Receitas</a>
+                    </li>
+                    <li>
+                        <a href="#">Novidades</a>
+                    </li>
+                    <li>
+                        <a href="#">Melhor avaliadas</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <p>Github</p>
+
+            <button class="dark-mode">
+                <a href="index.html">
+                    <img src="imagens/lampada.png" alt="" class="lampada">
+                </a>
+            </button>
+
+            <button onclick="menuShow()">
+                <img src="imagens/menu.svg" alt="" class="icone">
+            </button>
+
+        </div>
+    </header>
+
+    <div class="menu-mobile">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Receitas</a>
+                </li>
+                <li>
+                    <a href="#">Novidades</a>
+                </li>
+                <li>
+                    <a href="#">Melhor avaliadas</a>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <main>
+        <section id="container-inicial">
+            <article class="conteudo-inicial">
+
+                <p style="margin-top: 20px;">
+                    Novidade
+                </p>
+
+                <h1>
+                    Encontre a <br>receita perfeita!
+                </h1>
+                <hr>
+
+                <p id="explore">
+                    Explore dezenas de variações da bebida favorita <br> entre os <strong>devs</strong> ao redor do mundo!
+                </p>
+            </article>
+
+            <div id="container-imagens">
+
+                <div class="conteudo-imagens">
+                    <img src="imagens/image 17.png" alt="">
+                    <img src="imagens/image 15.png" alt="">
+                    <img src="imagens/image 13.png" alt="">
+                </div>
+
+                <div class="conteudo-imagens">
+                    <img src="imagens/image 14.png" alt="">
+                    <img src="imagens/image 12.png" alt="">
+                    <img src="imagens/image 10.png" alt="">
+                </div>
+
+                <div class="conteudo-imagens">
+                    <img src="imagens/image 16.png" alt="">
+                    <img src="imagens/image 18.png" alt="">
+                    <img src="imagens/image 11.png" alt="">
+                </div>
+
+                <div class="conteudo-imagens">
+                    <img src="imagens/image 14-1.png" alt="">
+                    <img src="imagens/image 12-1.png" alt="">
+                    <img src="imagens/image 10-1.png" alt="">
+                </div>
+            </div> <!-- Fim da div container imagens-->
+
+            
+
+        </section>
+
+        <section class ="receitas">
+             <article class="conteudo-receitas">
+
+                <div class="botao">
+                    <button class="button-down" onclick="buttonShow()">
+                        <img src="imagens/Button-light.svg" alt="">
+                    </button>
+                </div>
+
+                    <div class="conteudo-central-receitas">
+                        <p id="receitas">
+                            Receitas
+                        </p>
+                        <h1>
+                            Confira as ultimas receitas!
+                        </h1>
+                        <p id="info-titulo">
+                            Dê uma olhada nas receitas mais amadas!
+                        </p>
+                    </div>
+                    <div class="container-receitas">
+                        
+                        <div class="info-receitas">
+                            <p id="em-alta">Em alta 🔥</p>
+                            <h1 class="title-receitas">Cappuccino ☕
+                                <span>
+                                        Extraordinário · 4/4 
+                                </span>
+                            </h1>
+                            <p class="feedback">
+                                Uma bebida ideal para os amantes de doce e cremosidade. 😍
+                            </p>
+
+                            <div class="container-avatar">
+                                <img src="imagens-cards/Avatar-light.png" alt="avatar" >
+                                <p class="text-avatar">
+                                    Rafaella Ballerini
+                                </p>
+                            </div>
+
+
+                        </div>
+
+                        <div class="info-receitas">
+                            <p>Novo</p>
+                            <h1 class="title-receitas">Expresso ☕
+                                <span>Bom · 3/4 </span>
+                            </h1>
+                            <p class="feedback">
+                                Para quem gosta de um café amargo.
+                            </p>
+
+                            <div class="container-avatar">
+                                <img src="imagens-cards/Avatar (1).png" alt="avatar" >
+                                <p class="text-avatar">
+                                    Alex Silva
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="info-receitas">
+                            <p>Novo</p>
+                            <h1 class="title-receitas">Cappuccino ☕
+                                <span>Extraordinário · 4/4 </span>
+                            </h1>
+                            <p class="feedback">
+                                Uma bebida ideal para os amantes de doce e cremosidade. 😍
+                            </p>
+
+                            <div class="container-avatar">
+                                <img src="imagens-cards/Avatar (2).png" alt="avatar" >
+                                <p class="text-avatar">
+                                    Ana Katarina
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="info-receitas">
+                            <p>Novo</p>
+                            <h1 class="title-receitas">Cappuccino ☕
+                                <span>Extraordinário · 4/4 </span>
+                            </h1>
+                            <p class="feedback">
+                                Uma bebida ideal para os amantes de doce e cremosidade. 😍
+                            </p>
+
+                            <div class="container-avatar">
+                                <img src="imagens-cards/Avatar (3).png" alt="avatar" >
+                                <p class="text-avatar">
+                                    Susana lima
+                                </p>
+                            </div>
+
+                        </div>
+                    </div> <!-- fechamento da div container-receitas-->
+
+                <p id="carregar-receitas">
+                    Carregar mais receitas...
+                </p>
+            </article> <!-- fechamento do article conteudo-receitas-->
+        </section> <!-- fechamento da section receitas-->
+    </main>
+
+    <footer>
+        <p>
+            &copy; Copyright 	&lt; CODEFEE /&gt; 2023
+        </p>
+
+        <p id="last">
+            Feito com muito ❤ e café por Douglas sales
+        </p>
+    </footer>
+    
+</body>
+
+<script src="script.js"></script>
+</html>
