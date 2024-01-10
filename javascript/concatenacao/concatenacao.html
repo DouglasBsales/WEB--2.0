@@ -4,30 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Concatenacao</title>
-    <script>
-      let nome = prompt("Digite seu nome:");
-      let idade = prompt("Digite sua idade:");
-      let idade2 = 50;
-
-      document.write(
-        "<h1> Olá, " +
-          nome +
-          ". tudo bem ? Estou vendo aqui que você possui " +
-          idade +
-          " anos.</h1>"
-      );
-
-      console.log(typeof idade);
-    </script>
   </head>
-  <body
-    style="
+  <body style="
       display: flex;
       height: 100vh;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: #202020;
     "
-  ></body>
+  >
+  <h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ">Seja bem vindo!</h1>
+  <button style="height: 50px; border-radius: 10px; padding: 10px; background-color:#0C66E4;
+ border: #fff; cursor: pointer;" onclick="notaAluno()">
+    <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: #fff;">Veja sua nota da unidade</p>
+  </button>
+</body>
+
+<script src="script.js"></script>
 </html>
