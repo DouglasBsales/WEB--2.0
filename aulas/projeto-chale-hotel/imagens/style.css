@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    width: 65%;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+    min-width: 780px;
+}
+
+.area-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: #F0E79F url('imagens/topo-imagem-principal.png') no-repeat;
+}
+
+.area-logo a {
+    display: block;
+    background: url('imagens/logo.png') no-repeat left center;
+    height: 70px;
+    position: relative;
+    left: 15px;
+    top: 15px;
+    text-indent: -3000px;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 250px;
+    background: url('imagens/topo-imagem-lateral.png') no-repeat left center;
+}
+
+.conteudo-menu {
+    width: 82%;
+    height: 250px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+form {
+    display: flex;
+    margin: 10px;
+    border-top: 2px solid #A9A056;
+    border-bottom: 2px solid #A9A056;
+}
+
+form p {
+    font-size: 13px;
+    color: #a09d64;
+}
+
+form .reservar {
+    width: 120px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 20px;
+    border: none;
+    background-color: #A9A056;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+
+form .reservar:hover {
+    background-color: #fff;
+    color: #a09d64;
+    border: 2px solid #A9A056;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+header ul {
+    margin-left: 10px;
+    float: left;
+}
+
+header ul li a {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 10px;
+    text-decoration: none;
+    color: #746d40;
+    text-transform: uppercase;
+}
+
+header ul li a:hover {
+    background-color: #ffffec;
+}
+
+.conteudo-menu img {
+    float: right;
+    margin-right: 40px;
+}
+
+main {
+    width: 65%;
+    margin: auto;
+    min-width: 780px;
+    background: url('imagens/bg-container.png') repeat-y top center;
+}
+
+
+main .conteudo-1 {
+    width: 50%;
+    float: left;
+    background: url('imagens/bg-area-principal.png')repeat-X;
+}
+
+main .conteudo-dentro h1 {
+    font-size: 20px;
+    color: #746d40;
+    margin-left: 10px;
+    padding-top: 20px;
+}
+
+main .conteudo-dentro {
+    width: 90%;
+    margin: 0px 20px 73px;
+}
+
+main .conteudo-2 {
+    width: 50%;
+    float: right;
+    background: url('imagens/bg-area-lateral.png') repeat-X;
+}
+
+main .conteudo-lista {
+    width: 90%;
+    margin: 10px 20px 50px 20px;
+}
+
+
+main .conteudo-lista ul li a img {
+    width: 140px;
+    margin: 12px 10px 0px 12px;
+    border: 2px solid #FCF4BE;
+    float: left;
+}
+
+main .conteudo-lista ul li a {
+    display: block;
+    text-decoration: none;
+    clear: left;
+    padding: 10px;
+    padding-bottom: 39px;
+    border-bottom: 1px solid #fff;
+}
+
+main .conteudo-lista ul li a:hover {
+    background: #ffffffa9;
+}
+
+main .conteudo-lista ul li a h1 {
+    font-size: 16px;
+    color: #746d40;
+    background: url('imagens/ornamento.png') center right no-repeat;
+}
+
+main .conteudo-lista ul li a p {
+    font-size: 16px;
+    color: black;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    width: 65%;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    background: #fff url('imagens/bg-rodape.png') repeat-X left top;
+}
+
+footer h1 {
+    font-size: 20px;
+    color: #A9A056;
+}

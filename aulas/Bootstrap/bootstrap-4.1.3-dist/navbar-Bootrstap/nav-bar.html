@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav-bar- Bootstrap</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+    
+    <h2>Navegação simples/ com abas</h2>
+    <ul class="nav nav-tabs justify-content-center m-auto" >
+        <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Produtos</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link ">Serviços</a>
+        </li>
+    </ul>
+
+
+    <h2>Barra de navegação simples</h2>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a href="#" class="navbar-brand">Chalé hotel</a>
+
+
+        <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">user</a>
+            </li>
+        </ul>
+    </nav>
+
+        <h2>Barra de navegação com menu responsivo</h2>
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+            <a href="#" class="navbar-brand">Chalé hotel</a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Config</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">User</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <h2>Barra de navegação com fomrulário</h2>
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href=""class= "navbar-brand">Chalé Hotel</a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Config</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">User</a>
+                    </li>
+                    
+                </ul>
+
+                <form action="" class="form-inline">
+                    <input type="text" class="form-control" placeholder="Pesquisar">
+                    <button class="btn btn-outline-success ml-3">ok</button>
+                </form>
+
+
+            </div>
+        </nav>
+
+
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark mt-4">
+            <a href="" class="navbar-brand"> Chalé hotel</a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#menu1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="menu1">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Config</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Serviços</a>
+
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Serviços1</a>
+                            <a href="#" class="dropdown-item">Serviços2</a>
+                            <a href="#" class="dropdown-item">Serviços3</a>
+                        </div>
+
+
+                    </li>
+
+            
+                </ul>
+
+                <form action="" class="form-inline">
+                    <input type="text" class="input-control" placeholder="Pesquisar...">
+                    <button class="btn btn-outline-primary ml-3"> Ok</button>
+                </form>
+
+            </div>
+
+        </nav>
+
+
+        <h2>Cores</h2>
+
+        <nav>
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link"> Products</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">User</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <h2>Alinhamentos</h2>
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+            <a href=""class= "navbar-brand">Chalé Hotel</a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Config</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">User</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+
+
+        <h1>Titulo1</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sint ipsum voluptate, expedita quae laboriosam laudantium quaerat. Quis minus aliquid nisi cum. Non quisquam voluptas nostrum sequi inventore, ducimus obcaecati? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis excepturi accusamus asperiores exercitationem reprehenderit hic possimus quidem fuga velit nesciunt error, dolor consequuntur eveniet expedita totam esse dicta commodi.
+        </p>
+
+        <h1>Titulo1</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sint ipsum voluptate, expedita quae laboriosam laudantium quaerat. Quis minus aliquid nisi cum. Non quisquam voluptas nostrum sequi inventore, ducimus obcaecati? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis excepturi accusamus asperiores exercitationem reprehenderit hic possimus quidem fuga velit nesciunt error, dolor consequuntur eveniet expedita totam esse dicta commodi.
+        </p>
+
+        <h1>Titulo1</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sint ipsum voluptate, expedita quae laboriosam laudantium quaerat. Quis minus aliquid nisi cum. Non quisquam voluptas nostrum sequi inventore, ducimus obcaecati? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis excepturi accusamus asperiores exercitationem reprehenderit hic possimus quidem fuga velit nesciunt error, dolor consequuntur eveniet expedita totam esse dicta commodi.
+        </p>
+
+        <h1>Titulo1</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sint ipsum voluptate, expedita quae laboriosam laudantium quaerat. Quis minus aliquid nisi cum. Non quisquam voluptas nostrum sequi inventore, ducimus obcaecati? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis excepturi accusamus asperiores exercitationem reprehenderit hic possimus quidem fuga velit nesciunt error, dolor consequuntur eveniet expedita totam esse dicta commodi.
+        </p>
+
+        <h1>Titulo1</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sint ipsum voluptate, expedita quae laboriosam laudantium quaerat. Quis minus aliquid nisi cum. Non quisquam voluptas nostrum sequi inventore, ducimus obcaecati? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis excepturi accusamus asperiores exercitationem reprehenderit hic possimus quidem fuga velit nesciunt error, dolor consequuntur eveniet expedita totam esse dicta commodi.
+        </p>
+
+        <h1>Titulo1</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sint ipsum voluptate, expedita quae laboriosam laudantium quaerat. Quis minus aliquid nisi cum. Non quisquam voluptas nostrum sequi inventore, ducimus obcaecati? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis excepturi accusamus asperiores exercitationem reprehenderit hic possimus quidem fuga velit nesciunt error, dolor consequuntur eveniet expedita totam esse dicta commodi.
+        </p>
+
+        <h1>Titulo1</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sint ipsum voluptate, expedita quae laboriosam laudantium quaerat. Quis minus aliquid nisi cum. Non quisquam voluptas nostrum sequi inventore, ducimus obcaecati? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis excepturi accusamus asperiores exercitationem reprehenderit hic possimus quidem fuga velit nesciunt error, dolor consequuntur eveniet expedita totam esse dicta commodi.
+        </p>
+        <h1>Titulo1</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sint ipsum voluptate, expedita quae laboriosam laudantium quaerat. Quis minus aliquid nisi cum. Non quisquam voluptas nostrum sequi inventore, ducimus obcaecati? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis excepturi accusamus asperiores exercitationem reprehenderit hic possimus quidem fuga velit nesciunt error, dolor consequuntur eveniet expedita totam esse dicta commodi.
+        </p>
+
+        <h1>Titulo1</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sint ipsum voluptate, expedita quae laboriosam laudantium quaerat. Quis minus aliquid nisi cum. Non quisquam voluptas nostrum sequi inventore, ducimus obcaecati? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis excepturi accusamus asperiores exercitationem reprehenderit hic possimus quidem fuga velit nesciunt error, dolor consequuntur eveniet expedita totam esse dicta commodi.
+        </p>
+
+        <h1>Titulo1</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sint ipsum voluptate, expedita quae laboriosam laudantium quaerat. Quis minus aliquid nisi cum. Non quisquam voluptas nostrum sequi inventore, ducimus obcaecati? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis excepturi accusamus asperiores exercitationem reprehenderit hic possimus quidem fuga velit nesciunt error, dolor consequuntur eveniet expedita totam esse dicta commodi.
+        </p>
+
+
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<script src="../js/bootstrap.min.js"></script>
+</html>

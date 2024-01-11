@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+            <h1>Feedback do cliente</h1>
+            <p>Adorariamos saber mais sobre sua experiência como cliente. Sinta-se à vontade <br> para compartilhar sugestões, ideias e oque achar mais relevante</p>
+            <form action="formulario.php">
+            
+                <div class="nome">
+                    <label>Nome:</label> <br>
+                        <input type="text" name="nome" placeholder="Insira seu nome">
+                </div>
+
+                <div class="sobrenome">
+                    <label>Sobrenome</label>
+                        <input type="text" name="sobrenome" placeholder="Insira seu"> 
+                </div>
+
+                <div class="email">
+                    <label>Email:</label> <br>
+                        <input type="email" name="email" placeholder="Insira seu email">
+                </div>
+
+                <div class="servicos">
+                    <label>Como você avalia nossos serviços ?</label> <br>
+
+                    <div class="fundo">
+                        <input type="radio" name="servicos" id="iservicos">
+                        <label for="iservicos">Excelente</label>
+                    </div>
+
+                    <div class="fundo-1">
+                        <input type="radio" name="servicos" id="iservicos-1">
+                        <label for="iservicos-1">Muito bom</label>
+                    </div>
+
+                    <div class="fundo-2">
+                        <input type="radio" name="servicos" id="iservicos-2">
+                        <label for="iservicos-2">Bom</label>
+                    </div>
+
+                    <div class="fundo-3">
+                        <input type="radio" name="servicos" id="iservicos-3">
+                        <label for="iservicos-3">Justo</label>
+                    </div>
+
+                    <div class="fundo-4">
+                        <input type="radio" name="servicos" id="iservicos-4">
+                        <label for="iservicos-4">Ruim</label>
+                    </div>
+                </div>
+
+                <div class="exp">
+                    <label>Descreva sua experiência:</label>
+                    <input type="text" name="exp" placeholder="Insira seu texto">
+                </div>
+            </form>
+    </main>
+</body>
+</html>

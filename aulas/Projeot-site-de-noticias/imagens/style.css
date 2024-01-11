@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    background: url('imagens/fundo.png') repeat-x;
+    height:230px;
+}
+
+.container{
+    width:750px;
+    margin:0 auto;
+}
+
+.topo{
+    height:150px;
+    padding-top:25px;
+    background:url('imagens/detalhe-topo.png') no-repeat right top;
+}
+
+.logo{
+    width:152px;
+    height:66px;
+    background:url('imagens/logo.png');
+    text-indent:-3000px;
+}
+
+.container ul{
+    display:flex;
+    width:629px;
+    list-style-type:none;
+    margin-top:30px;
+    border:2px solid #800a3f;
+}
+
+.container ul li{
+    padding:10px 18px 10px 18px;
+    background:#B1002E url('imagens/divisor.png') no-repeat right center;
+    cursor:pointer;
+}
+
+.container ul li a{
+    text-decoration:none;
+    color:#fff;
+}
+
+.container ul li:hover{
+    background-color:#E10037;
+    color:black;
+}
+
+.container-main{
+    width:720px;
+    margin:20px auto;
+    border:1px solid red;
+}
+
+.noticia-lateral{
+    width:200px;
+    border:1px solid blue;
+    float:left;
+    margin-right:10px;
+    background: url('imagens/fundo-caixa.png');
+}
+
+.noticia-lateral h2{
+    background-color:#294C71;
+    color:#fff;
+    font-size:20px;
+    padding:5px;
+    margin:5px 10px 10px 10px;
+}
+
+.noticia-lateral ul{
+    list-style-type:none;
+    background-color:#fff;
+    margin:5px 10px 10px 10px;
+    padding-left:5px;
+    line-height:40px;
+}
+
+.conteudo{
+    width:290px;
+    border:1px solid orange;
+    float:left;
+    background: url('imagens/fundo-caixa.png');
+}
+
+.conteudo h2{
+    background:#294C71;
+    color:#fff;
+    font-size:20px;
+    padding:5px;
+    margin:5px 10px 10px 10px;
+}
+
+.conteudo h3{
+    display:inline-block;
+    font-size:16px;
+    background:#E10037;
+    margin-left:10px;
+    padding:2px;
+}
+
+.conteudo .conteudo-1{
+    background-color:#fff;
+    margin:5px 10px 10px 10px;
+    padding-bottom:5px;
+}
+
+.conteudo .conteudo-1 img{
+    width:90%;
+    margin-left:10px;
+    margin-top:5px;
+}
+
+.conteudo .conteudo-1 p{
+    margin-left:10px;
+    margin-top:5px;
+}
+
+.conteudo .conteudo-1 a{
+    margin-left:10px;
+    margin-top:5px;
+    color:#B1002E;
+    text-decoration:none;
+}
+
+.conteudo .conteudo-1 a:hover{
+    text-decoration:underline;
+}
+
+.conteudo-2{
+    width:200px;
+    float:right;
+    border:1px solid blue;
+}
+
+

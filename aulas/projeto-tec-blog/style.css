@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:'Trebuchet MS',Helvetica, sans-serif;
+    background:#f8f5f8;
+}
+
+header{
+    width:100%;
+    background:#FFC406;
+    height:200px;
+}
+
+header h1{
+    text-align: center;
+    vertical-align: center;
+    padding-top:50px;
+    font-size:3em;
+}
+
+.tec{
+    color:#4E4D45;
+    margin-right:-13px;
+}
+
+.blog{
+    font-weight:bolder;
+    color:#fff;
+}
+
+
+ul{
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+ul li {
+    padding:40px 15px 0px 15px;
+}
+
+ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bolder;
+    transition:.4s;
+}
+
+ul li a:hover{
+    background-color:#fff;
+    color:#FFC406;
+    padding:10px;
+    border-radius:10px;
+    transition: .4s;
+}
+
+.area-principal{
+    width:960px;
+    margin:0px auto;
+}
+
+.noticia{
+    background-color:#fff;
+    width:660px;
+    float:left;
+    padding:20px 0px 20px 20px;
+    margin-top:20px;
+}
+
+.noticia h1{
+    color:#FFC406;
+    font-size:25px;
+}
+
+.noticia span{
+    display:block;
+    margin-bottom:10px;
+    font-size:0.8em;
+    padding-bottom:10px;
+}
+
+.noticia a{
+    text-decoration:none;
+    color:#FFC406;
+    display:block;
+    margin-top:10px;
+}
+
+.noticia-lateral-1{
+    background:#fff;
+    width:240px;
+    float:right;
+    padding:10px;
+    margin-top:20px;
+}
+
+hr{
+    margin-top:10px;
+}
+
+.noticia-lateral-1 h1{
+    background:rgba(128, 128, 128, 0.384);
+    font-size:25px;
+    color:rgba(0, 0, 0, 0.671);
+}
+
+.noticia-lateral-1 a{
+    text-decoration:none;
+    color:#FFC406;
+}
+
+.noticia-lateral-1 p{
+    margin-top:10px;
+}
+
+.noticia-lateral-2{
+    background:#fff;
+    width:240px;
+    float:right;
+    margin-top:20px;
+    padding:10px;
+}
+
+.noticia-lateral-2 h1{
+    background:rgba(128, 128, 128, 0.384);
+    color:rgba(0, 0, 0, 0.671);
+    font-size:25px;
+}
+
+
+.noticia-lateral-2 a{
+    display:flex;
+    flex-direction:column;
+    text-decoration:none;
+    color:#FFC406;
+    font-size:20px;
+    padding-bottom:5px;
+}
+
+.noticia-lateral-2 a:hover {
+    text-decoration:underline;
+}
+
+footer{
+    background:#ccc;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}

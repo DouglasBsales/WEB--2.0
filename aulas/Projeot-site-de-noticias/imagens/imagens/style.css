@@ -1,0 +1,414 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#home .home, 
+#brasil .brasil, 
+#fotos .fotos{
+    background:#E10037;
+}
+
+header{
+    background:url('fundo.png') repeat-x;
+    height:233px;
+}
+
+.container{
+    width:920px;
+    margin:0 auto;
+}
+
+.topo{
+    background:url('detalhe-topo.png')no-repeat right top;
+    height:150px;
+    padding-top:25px;
+}
+
+.logo{
+    width:152px;
+    height:66px;
+    background:url('logo.png');
+    text-indent:-3000px;
+}
+
+.topo ul{
+    display:flex;
+    list-style-type:none;
+    margin-top:30px;
+    border:2px solid #800a3f;
+    width:797px;
+}
+
+.topo ul li{
+    background:#B1002E url('divisor.png') no-repeat right center;
+}
+
+.topo ul li a{
+    display:block;
+    text-decoration:none;
+    color:#fff;
+    padding:10px 30px;
+}
+
+.topo ul li a:hover{
+    color:black;
+    background-color:#E10037;
+}
+
+main{
+    width:920px;
+    margin:10px auto;
+}
+
+
+.conteudo-lateral{
+    width:190px;
+    margin:10px;
+    float:left;
+    background:url('fundo-caixa.png');
+}
+
+.conteudo-lateral h1{
+    color:#fff;
+    background-color:#28496D;
+    font-size:25px;
+    margin-bottom:10px;
+    padding:5px;
+    margin:10px;
+}
+
+.conteudo-lateral ul{
+    list-style-type: none;
+    margin:10px;
+    background-color:#fff;
+}
+
+.conteudo-lateral ul li{
+    line-height:40px;
+}
+
+.conteudo-lateral ul li a{
+    text-decoration:none;
+    color:black;
+    display:block;
+    padding-left:5px;
+}
+
+.conteudo-lateral ul li a:hover{
+    background:url('marcador.png') no-repeat left center;
+    color:rgba(0, 0, 0, 0.301);
+    padding-left:25px;
+}
+
+
+
+
+.conteudo-branco{
+    background-color:#fff;
+    margin:10px;
+}
+
+
+
+.conteudo-principal{
+    width:340px;
+    margin:10px 7px; 
+    float:left;
+    background:url('fundo-caixa.png');
+}
+
+#brasil .conteudo-principal{
+    width:698px;
+    margin:10px 5px; 
+    float:right;
+    background:url('fundo-caixa.png');
+}
+
+#fotos .conteudo-principal{
+    width:920px;
+    margin:10px 5px; 
+    float:right;
+    background:url('fundo-caixa.png');
+}
+
+.conteudo-principal h1{
+    color:#fff;
+    background-color:#28496D;
+    font-size:25px;
+    margin-bottom:10px;
+    padding:5px;
+    margin:10px;
+}
+
+.conteudo-principal h2{
+    background-color:#E10037;
+    font-size:16px;
+    display:inline-block;
+    margin:5px 10px;
+    padding:3px;
+}
+
+.conteudo-principal img{
+    width:94%;
+    margin:0 10px;
+    border:3px solid rgba(128, 128, 128, 0.247);
+}
+
+#fotos .conteudo-principal img{
+    width:97%;
+    margin:0 10px;
+    border:3px solid rgba(128, 128, 128, 0.247);
+}
+
+.conteudo-principal p{
+    margin:5px 10px;
+}
+
+.conteudo-principal a{
+    margin:0 10px;
+    text-decoration:none;
+    color:#B1002E;
+}
+
+.conteudo-principal a:hover{
+    text-decoration:underline;
+}
+
+
+
+
+.conteudo-principal-1{
+    width:340px;
+    margin:10px 5px;
+    float:right;
+    background: url('fundo-caixa.png');
+}
+
+.conteudo-principal-1 h1{
+    color:#fff;
+    background-color:#28496D;
+    font-size:25px;
+    margin-bottom:10px;
+    padding:5px;
+    margin:10px;
+}
+
+.conteudo-principal-1 h2{
+    background-color:#B1002E;
+    font-size:16px;
+    display:inline-block;
+    margin:5px 10px;
+    padding:3px;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.conteudo-principal-1 img{
+    width:94%;
+    margin:0 10px;
+    border:3px solid rgba(128, 128, 128, 0.247);
+}
+
+.conteudo-principal-1 p{
+    margin:5px 10px;
+}
+
+.conteudo-principal-1 a{
+    margin:0 10px;
+    text-decoration:none;
+    color:#B1002E;
+}
+
+.conteudo-principal-1 a:hover{
+    text-decoration:underline;
+}
+
+
+.conteudo-lateral-2{
+    clear:both;
+    width:190px;
+    float:left;
+    margin:10px;
+    background:url('fundo-caixa.png');
+}
+
+#brasil .conteudo-lateral-2{
+    width:190px;
+    clear:left;
+    margin:10px;
+    background:url('fundo-caixa.png');
+}
+
+.conteudo-lateral-2 h1{
+    color:#fff;
+    background-color:#28496D;
+    font-size:20px;
+    margin-bottom:10px;
+    padding:5px;
+    margin:10px;
+}
+
+label{
+    font-weight:bold;
+}
+
+input.email{
+    width:95%;
+    height:30px;
+    border:1px solid rgba(128, 128, 128, 0.247);
+    padding-left:5px;
+}
+
+input.button{
+    margin:10px 0px;
+    width:75%;
+    height:40px;
+    color:#fff;
+    background-color:#B1002E;
+    cursor:pointer;
+    font-size:20px;
+}
+
+input:focus{
+    outline:none;
+}
+
+.conteudo-principal-2{
+    width:340px;
+    margin:10px 5px;
+    float:left;
+    background: url('fundo-caixa.png');
+}
+
+#brasil .conteudo-principal-2{
+    width:698px;
+    margin:10px 5px;
+    float:right;
+    background: url('fundo-caixa.png');
+}
+
+#fotos .conteudo-principal-2{
+    width:920px;
+    margin:10px 5px;
+    float:right;
+    background: url('fundo-caixa.png');
+}
+
+.conteudo-principal-2 h1{
+    color:#fff;
+    background-color:#28496D;
+    font-size:20px;
+    margin-bottom:10px;
+    padding:5px;
+    margin:10px;
+}
+
+.conteudo-branco ul{
+    list-style-type:none;
+}
+
+.conteudo-branco ul li img{
+    width:35%;
+    margin:10px;
+    float:left;
+    border:3px solid rgba(128, 128, 128, 0.247);
+}
+
+#brasil .conteudo-branco ul li img{
+    width:20%;
+    clear:left;
+    margin:10px;
+    border:3px solid rgba(128, 128, 128, 0.247);
+}
+
+#fotos .conteudo-branco ul li img{
+    width:15%;
+    float:left;
+    clear:left;
+    margin:10px;
+    border:3px solid rgba(128, 128, 128, 0.247);
+}
+
+
+.conteudo-branco ul li a{
+    display:inline-block;
+    margin:10px;
+    text-decoration:none;
+    color:#2997FF;
+    text-transform: uppercase;
+    font-size:13px;
+}
+
+#brasil .conteudo-branco ul li a{
+    display:inline-block;
+    margin:20px 10px 10px;
+    text-decoration:none;
+    color:#2997FF;
+    text-transform: uppercase;
+    font-size:13px;
+}
+
+#fotos .conteudo-branco ul li a{
+    display:inline-block;
+    margin:20px 10px 10px;
+    text-decoration:none;
+    color:#2997FF;
+    text-transform: uppercase;
+    font-size:13px;
+}
+
+.conteudo-branco ul li a:hover{
+    color:#2998ffc2;
+    text-decoration:underline;
+}
+
+.conteudo-branco ul li p{
+    padding-bottom:30px;
+    border-bottom:1px solid rgba(0, 0, 0, 0.274);
+}
+
+#brasil .conteudo-branco ul li p{
+    padding-bottom:60px;
+    border-bottom:1px solid rgba(0, 0, 0, 0.274);
+}
+
+#fotos .conteudo-branco ul li p{
+    padding-bottom:60px;
+    border-bottom:1px solid rgba(0, 0, 0, 0.274);
+}
+
+.conteudo-principal-3{
+    width:340px;
+    margin:10px 5px 40px 5px;
+    float:right;
+    background: url('fundo-caixa.png');
+}
+
+.conteudo-principal-3 h1{
+    color:#fff;
+    background-color:#28496D;
+    font-size:20px;
+    margin-bottom:10px;
+    padding:5px;
+    margin:10px;
+}
+
+footer{
+    background-color:#28496D;
+    clear:both;
+    height:80px;
+}
+
+footer p{
+    width:920px;
+    margin:0 auto;
+    color:#fff;
+    padding-top:40px;
+}
