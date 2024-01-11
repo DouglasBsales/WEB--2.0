@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form action="usuario.php">
+
+        <h1>Estilizando formulários</h1>
+        <fieldset>
+            <legend>Detalhes contato</legend>
+
+            <div id="detalhes-contato">
+
+                <label for="nome">Nome:</label> <br>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome"> <br>
+
+                <label for="email">Email:</label> <br>
+                <input type="email" name="email" id="email" placeholder="Digite seu email"> <br>
+
+                <label for="url"> URL:</label> <br>
+                <input type="text" name="url" id="url" placeholder="Digite sua URL">
+            </div>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentários</legend> 
+
+            <div id="mensagem">
+                <label>Message:</label> <br>
+                <textarea name="mensagem" id="imensagem" cols="30" rows="10">
+                </textarea>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Lembrar de mim</legend>
+
+            <div id="lembrar-de-mim">
+
+                <input type="radio" name="opcao" id="sim"> 
+                <label for="sim">Sim</label><br>
+
+                <input type="radio" name="opcao" id="nao"> 
+                <label for="nao">Não</label>
+            </div>
+        </fieldset>
+
+        <div id="button">
+            <input type="submit" value="Enviar">
+        </div>
+
+    </form>
+
+</body>
+</html>
