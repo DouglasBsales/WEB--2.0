@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding:0;   
+}
+body{
+    background-image: url(arquivos-necessarios-projetos-unes/fundo2.png);
+}
+
+header img{
+    margin-left:343px;
+    margin-top:30px;
+}
+
+nav{
+    display:flex;
+    float:right;
+    margin-top:50px;
+    margin-right:345px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#383F5D;
+    margin-right:30px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+article h1{
+    margin-left:343px;
+    margin-top:70px;
+}
+
+article p{
+    margin-left:343px;
+    margin-top:20px;
+}
+
+form{
+    margin-left:343px;
+    margin-top:20px;
+}
+
+input{
+    width:400px;
+    height:20px;
+    padding-left:10px;
+    margin-bottom:20px;
+}
+
+textarea{
+    width:500px;
+    height:200px;
+}
+
+input:focus{
+    box-shadow:0 0 0 0;
+    border:2px solid #383F5D;
+    outline:none;
+}
+
+textarea:focus{
+    box-shadow:0 0 0 0;
+    border:2px solid #383F5D;
+    outline:none;
+}
+
+.button{
+    width:100px;
+    height:30px;
+    padding:0;
+    cursor:pointer;
+}

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:2000px;
+}
+
+ul{
+    display:flex;
+    background:#202020;
+    list-style-type:none;
+    padding:20px;
+    position:fixed;
+    width:100%;
+}
+
+ul li{
+    margin-right:40px;
+}
+
+ul li a{
+    color:#fff;
+    font-family:arial;
+    text-decoration:none;
+    padding:20px;
+}
+
+
+ul li a:hover{
+    background:rgb(24,129,233);
+}
+
+#home .sobre a{
+    background:rgb(24,129,233);
+}

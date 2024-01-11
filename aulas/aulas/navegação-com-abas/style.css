@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    width:720px;
+    display:flex;
+    padding:20px;
+}
+
+ul li a{
+    color:#fff;
+    text-decoration:none;
+    padding:20px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-top: 1px solid black;
+    border-left:1px solid black;
+    background:rgb(221, 163, 4);
+}
+
+#home .atual a{
+    background:orange;
+}
+
+   

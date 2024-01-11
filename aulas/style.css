@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding:0;
+}
+
+input:focus{
+    box-shadow: 0 0 0 0;
+    outline:0;
+}
+
+body{
+    background-color:#202020;
+    margin-top:100px;
+}
+
+h1{
+    text-align: center;
+    padding-top:40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#000000a8;
+}
+
+main{
+    background-color:#fff;
+    width:700px;
+    height:100vh;
+    margin:auto;
+
+}
+
+.nome, .sobrenome, .email, .servicos, .exp{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top:30px;
+    margin-left:62px;
+}
+
+label{
+    color:#000000ce;
+}
+
+.nome input{
+    width:600px;
+    height:30px;
+    border-radius:5px;
+    margin-top:5px;
+    border:2px solid rgba(170, 210, 233, 0.992);
+    padding-left:10px;
+}
+
+.sobrenome input{
+    width:600px;
+    height:30px;
+    border-radius:5px;
+    margin-top:5px;
+    border:2px solid rgba(170, 210, 233, 0.992);
+    padding-left:10px;
+}
+
+.email input{
+    width:600px;
+    height:30px;
+    border-radius:5px;
+    margin-top:5px;
+    border:2px solid rgba(170, 210, 233, 0.992);
+    padding-left:10px;
+}
+
+.email label::after{
+     content: "★"; 
+     color:#58BBF5;
+     font-size:12px;
+     position:absolute;
+     top:440px;
+}
+
+.servicos input{
+    margin-top:15px;
+    color:#000000ce;
+}
+
+.servicos .fundo{
+    background-color:#58bbf53f;
+    width:600px;
+    height:33px;
+    padding:0px 0px 10px 10px;
+    border-radius:5px;
+    margin-top:5px;
+}
+
+.servicos .fundo-1{
+    background-color:#58bbf53f;
+    width:600px;
+    height:33px;
+    padding:0px 0px 10px 10px;
+    border-radius:5px;
+    margin-top:5px;
+}
+
+.servicos .fundo-2{
+    background-color:#58bbf53f;
+    width:600px;
+    height:33px;
+    padding:0px 0px 10px 10px;
+    border-radius:5px;
+    margin-top:5px;
+}
+
+.servicos .fundo-3{
+    background-color:#58bbf53f;
+    width:600px;
+    height:33px;
+    padding:0px 0px 10px 10px;
+    border-radius:5px;
+    margin-top:5px;
+}
+
+.servicos .fundo-4{
+    background-color:#58bbf53f;
+    width:600px;
+    height:33px;
+    padding:0px 0px 10px 10px;
+    border-radius:5px;
+    margin-top:5px;
+}
+
+.exp input{
+    width:600px;
+    height:30px;
+    border-radius:5px;
+    margin-top:5px;
+    border:2px solid rgba(170, 210, 233, 0.992);
+    padding-left:10px;
+}
+
+
+
+

@@ -1,0 +1,12 @@
+linear-gradiente do button: 
+
+#faa600, #f68a00.
+
+color solida do button: #F79300;
+
+cor da borda do button: #db7d00
+
+
+cor do backgroundo do container: rgba(255,255,255,0.3);
+
+cor do background do body: #643d87;
