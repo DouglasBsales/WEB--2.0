@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'lato', sans-serif
+}
+
+.imagens-fundo {
+    background: url('imagens/imagem1-grande.jpg');
+    background-position:center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    opacity:0.7;
+}
+
+.imagens-fundo h1 {
+    display: inline-block;
+    padding: 20px;
+    background: #535253c7;
+    color: #fff;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+}
+
+.conteudo-sem-img {
+    width: 100%;
+    height: 320px;
+}
+
+.conteudo-branco {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.conteudo-branco h1 {
+    margin-top:100px;
+    text-align: center;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+    color: #535253;
+}
+
+.conteudo-branco p{
+    margin-bottom:20px;
+}
+
+.imagens-fundo-1 {
+    background: url('imagens/imagem2-grande.jpg');
+    background-attachment: fixed;
+    background-position:center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    opacity:0.7;
+}
+
+.imagens-fundo-1 h1{
+    display: inline-block;
+    padding: 20px;
+    background: #535253c7;
+    color: #fff;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+}
+
+.imagens-fundo-2 {
+    background: url('imagens/imagem3-grande.jpg');
+    background-attachment: fixed;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    opacity:0.7;
+}
+
+.imagens-fundo-2 h1{
+    display: inline-block;
+    padding: 20px;
+    background: #535253c7;
+    color: #fff;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+}
+
+.imagens-fundo-3 {
+    background: url('imagens/imagem4-grande.jpg');
+    background-attachment: fixed;
+    background-position:center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    opacity:0.7;
+}
+
+.imagens-fundo-3 h1{
+    display: inline-block;
+    padding: 20px;
+    background: #535253c7;
+    color: #fff;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+}
+
+.imagens-fundo-4 {
+    background: url('imagens/imagem6-grande.jpg');
+    background-attachment: fixed;
+    background-position:center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    opacity:0.7;
+}
+
+.imagens-fundo-4 h1{
+    display: inline-block;
+    padding: 20px;
+    background: #535253c7;
+    color: #fff;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+}

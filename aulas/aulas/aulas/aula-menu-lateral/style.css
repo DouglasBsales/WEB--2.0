@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background:#202020;
+}
+
+ul{
+    background:orange;
+    list-style-type:none;
+    width:400px;
+}
+
+ul li {
+    cursor:pointer;
+}
+
+ul li a{
+    text-decoration:none;
+    color:#000;
+    display:block;
+    width:100%;
+    height:100%;
+    text-indent: 40px;
+    line-height:50px;
+}
+
+a:hover{
+    background:yellow;
+}
+
+#home .home a{
+    background:yellow;
+}
