@@ -6,27 +6,28 @@
     <title>Exercicio A-B-C</title>
     <script>
 
-        let a = 10;
-        let b = 20;
-        let c = null;
-
-        document.write("A:" + a + "<br />")
-        document.write("B:" + b + "<br />")
-        document.write("C:" + c + "<br />")
-
-        document.write("<hr />")
-
-        c = a;
-        a = b;
-        b = c;
-        c = null;
-
-        document.write("A:" + a + "<br />")
-        document.write("B:" + b + "<br />")
-        document.write("C:" + c + "<br />")
 
 
-    </script>
+    //Imprima em ordem decrescente todos os números entre 20 e 0, incluindo os limites! No final, escreva a palavra "FIM". DICA: você pode decrementar uma variável!
+
+    function pulaLinha(){
+        document.write("<br>")
+    }    
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+     mostra("<h2>Números entre 20 e 0: </h2>");
+
+    var cont = 20;
+    while(cont >= 0){
+        mostra(cont);
+        cont = cont -1;
+    }
+    mostra("FIM!");
+
+</script>
 </head>
 <body>
     
