@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcular IMC do usuário</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    "
+  >
+    <h1 style="color: #202020">Calcule seu IMC (índice de massa corporal)</h1>
+    <p style="color: #202020">Insira seus dados nos campos abaixo</p>
+    <form action="" style="display: flex">
+      <fieldset style="height: 35px;">
+        <legend style="color: #202020">Peso</legend>
+        <input
+          style="width: 50px; border: none; outline: none; height: 10px;"
+          type="text"
+          id="peso"
+        />
+      </fieldset>
+
+      <fieldset style="height: 35px;">
+        <legend style="color: #202020">Altura</legend>
+        <input
+          style="width: 50px; border: none; outline: none;"
+          type="text"
+          id="altura"
+        />
+      </fieldset>
+
+      <button
+        style="
+          background-color: #1877f2;
+          border-radius: 20px;
+          border: 1px solid #1876f256;
+          cursor: pointer;
+          padding: 10px;
+        "
+      onclick="calcularImc()">
+        <p style="color: #fff; font-family: Arial, Helvetica, sans-serif">
+          Descubra seu IMC
+        </p>
+      </button>
+    </form>
+  </body>
+  <script src="exercicio9.js"></script>
+</html>

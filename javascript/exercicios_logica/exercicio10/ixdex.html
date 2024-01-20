@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcular nota do aluno</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    "
+  >
+    <h1 style="color: #202020">Calcule sua média</h1>
+    <p style="color: #202020">Insira seus dados nos campos abaixo</p>
+    <form action="" style="display: flex">
+        <input 
+        style="margin-right: 10px; height: 50px; height: 50px; font-size: px;"
+        type="text" 
+        id="nome"
+        placeholder="Digite seu nome..."
+        >
+        
+      <fieldset style="height: 35px;">
+        <legend style="color: #202020">Nota1</legend>
+        <input
+          style="width: 50px; border: none; outline: none; height: 10px;"
+          type="text"
+          id="nota1"
+        />
+      </fieldset>
+
+      <fieldset style="height: 35px;">
+        <legend style="color: #202020">Nota2</legend>
+        <input
+          style="width: 50px; border: none; outline: none;"
+          type="text"
+          id="nota2"
+        />
+      </fieldset>
+
+      <fieldset style="height: 35px;">
+        <legend style="color: #202020">Nota3</legend>
+        <input
+          style="width: 50px; border: none; outline: none;"
+          type="text"
+          id="nota3"
+        />
+      </fieldset>
+
+      <fieldset style="height: 35px;">
+        <legend style="color: #202020">Nota4</legend>
+        <input
+          style="width: 50px; border: none; outline: none;"
+          type="text"
+          id="nota4"
+        />
+      </fieldset>
+
+      <button
+        style="
+          background-color: #1877f2;
+          border-radius: 10px;
+          border: 1px solid #1876f256;
+          cursor: pointer;
+          height: 50px;
+        "
+      onclick="exibirMedia()">
+        <p style="color: #fff; font-family: Arial, Helvetica, sans-serif">
+          Calcular média
+        </p>
+      </button>
+    </form>
+  </body>
+  <script src="script.js"></script>
+</html>
