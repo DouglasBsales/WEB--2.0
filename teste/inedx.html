@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .menu {
+        width: 200px;
+        height: 100vh;
+        background-color: rgb(0, 238, 255);
+      }
+      .menu .lista {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        justify-content: center;
+      }
+
+      a {
+        text-decoration: none;
+        display: block;
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <ul class="lista">
+        <li>
+          <a href="">Dashboard</a>
+        </li>
+        <li>
+          <a href="">User</a>
+        </li>
+        <li>
+          <a href="">Configurações</a>
+        </li>
+      </ul>
+
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          background-color: #fff;
+          border: 1px solid red;
+        "
+        id="div"
+      >
+        <p>Jeffinho</p>
+      </div>
+    </div>
+  </body>
+  <script>
+   let div = document.getElementById("div");
+    div.addEventListener("mouseenter", function () {
+      div.style.backgroundColor = "red";
+      div.addEventListener("mouseleave", function () {
+        div.style.backgroundColor = "blue";
+      });
+    }); 
+  </script>
+</html>

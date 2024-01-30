@@ -1,13 +1,21 @@
+/*
+funcao responsavel por criar condicoes nas formas de pagamento do usuario
+e aplicar descontos conforme a forma escolhida.
+*/
 function exibirValor() {
   let produto = parseFloat(document.getElementById("produto").value);
   let formaDePagamento = document.getElementById("pagamento").value;
   let cartao = document.getElementById("cartao").value;
 
-  let valorPixOuDinheiro = produto - 0.15 * produto;
-  let aVistaCredito = produto - 0.1 * produto;
+  let valorPixOuDinheiro = produto - (0.15 * produto);
+  let aVistaCredito = produto - (0.10 * produto);
   let produtoDuasVezes = produto;
-  let tresVezesCartao = produto + 0.1 * produto;
+  let tresVezesCartao = produto + (0.10 * produto);
 
+  if(isNaN(produto)){
+    return alert("Insira um número válido.")
+  }
+  
   switch (formaDePagamento) {
     case "pix":
     case "dinheiro": {
@@ -27,7 +35,7 @@ function exibirValor() {
       case "2":
       case "2x":
       case "2 vezes": {
-        return alert(`O valor a ser pago seria: ${aVistaCredito.toFixed(2)} com desconto de 10%`)
+        return alert(`O valor a ser pago seria: ${produtoDuasVezes.toFixed(2)} com desconto de 10%`)
       }
        
       case "3":
@@ -38,7 +46,7 @@ function exibirValor() {
         }
 
       default:
-        alert("Forma de pagamento inválida. insira apenas 2x ou 3x");
+        alert("Forma de pagamento inválida.");
     }
   }
 };

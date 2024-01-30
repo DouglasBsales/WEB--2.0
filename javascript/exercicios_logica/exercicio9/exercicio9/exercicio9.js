@@ -32,3 +32,4 @@ function calcularImc() {
     alert(`${imc} Obesidade grau III (mórbida)`)
   }
 };
+

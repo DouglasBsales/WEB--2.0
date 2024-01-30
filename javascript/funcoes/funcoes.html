@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcoes</title>
+    <script>
+        function calcularAreaTerreno(largura, comprimento){
+            let area = largura * comprimento; 
+            return area
+        };
+
+        let tamanho = parseFloat(prompt('Digite a largura do terreno'));
+        let comprimento = parseInt(prompt('Digite o comprimento do terreno'));
+
+        let area = calcularAreaTerreno(largura, comprimento);
+        document.write(`a area do terreno é de: ${area.toFixed(2)}`)
+
+    </script>
+</head>
+<body>
+</body>
+</html>

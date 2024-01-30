@@ -14,21 +14,19 @@
       align-items: center;
     "
   >
-    <h1 style="color: #202020">Calcule sua média</h1>
-    <p style="color: #202020">Insira seus dados nos campos abaixo</p>
     <form action="" style="display: flex">
-        <input 
-        style="margin-right: 10px; height: 50px; height: 50px; font-size: px;"
-        type="text" 
+      <input
+        style="margin-right: 10px; height: 50px; height: 50px; font-size: px"
+        type="text"
         id="produto"
         placeholder="Digite o valor do produto"
-        requierd
-        >
-        
-      <fieldset style="height: 35px;">
+        required
+      />
+
+      <fieldset style="height: 35px">
         <legend style="color: #202020">escolha sua forma de pagamento</legend>
         <input
-          style=" border: none; outline: none; height: 10px;"
+          style="border: none; outline: none; height: 10px"
           type="text"
           id="pagamento"
           placeholder="dinheiro, pix ou cartao"
@@ -36,10 +34,10 @@
         />
       </fieldset>
 
-      <fieldset style="height: 35px;">
+      <fieldset style="height: 35px">
         <legend style="color: #202020">cartão em 2 ou 3x</legend>
         <input
-          style=" border: none; outline: none; height: 10px;"
+          style="border: none; outline: none; height: 10px"
           type="text"
           id="cartao"
           requierd
@@ -54,7 +52,8 @@
           cursor: pointer;
           height: 50px;
         "
-      onclick="exibirValor()">
+        onclick="exibirValor()"
+      >
         <p style="color: #fff; font-family: Arial, Helvetica, sans-serif">
           Calcular média
         </p>
