@@ -1,15 +1,11 @@
-function multplicar(numero1, numero2) {
-  let multplicacao = numero1 * numero2;
-
-  if (numero1 < 0 || numero2 < 0) {
-    return "Digite números positivos";
+function personagemMorreu(dano, saude) {
+  if (dano - saude <= 0) {
+    console.log("O personagem morreu com o ataque")
+  } else{
+    console.log("O personagem sobrebiveu ao ataque")
   }
+};
 
-  if (multplicacao >= 0) {
-    return multplicacao;
-  } 
-}
+personagemMorreu(100, 60);
 
-console.log(multplicar(-8, -2));
-console.log(multplicar(8, 2));
-console.log(multplicar(8, -2));
+
