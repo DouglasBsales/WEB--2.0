@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,600;9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body class="flex justify-center items-center h-screen">
+    <div class="border bg-[#000] p-[20px] rounded-[20px]">
+      <div class="flex justify-end pr-[20px] pb-[20px]">
+        <p class="text-white text-8xl" id="exibirNumbers">0</p>
+      </div>
+
+      <div class="flex flex-col gap-[15px]">
+        <div class="flex gap-[10px]" style="font-family: 'DM Sans', sans-serif">
+          <div>
+            <button
+              onclick="clearContent()"
+              class="w-[80px] h-[80px] flex justify-center items-center rounded-full bg-[#A5A5A5]"
+            >
+              <p class="text-3xl font-semibold" id="ac">AC</p>
+              <p class="text-3xl font-semibold" id="c" style="display: none">
+                C
+              </p>
+            </button>
+          </div>
+          <div>
+            <button
+              class="w-[80px] h-[80px] flex justify-center items-center rounded-full bg-[#A5A5A5]"
+            >
+              <i class="bi bi-plus-slash-minus text-4xl"></i>
+            </button>
+          </div>
+          <div>
+            <button
+              class="w-[80px] h-[80px] flex justify-center items-center rounded-full bg-[#A5A5A5]"
+            >
+              <i class="bi bi-percent text-4xl"></i>
+            </button>
+          </div>
+          <div>
+            <button
+              class="w-[80px] h-[80px] flex justify-center items-center rounded-full bg-[#FF9F0A]"
+              id="divisao"
+              onclick="divisao()"
+            >
+              <p class="text-5xl font-semibold text-white" id="iconDiv">÷</p>
+            </button>
+          </div>
+        </div>
+        <div class="flex gap-[10px]">
+          <div>
+            <button
+              id="7"
+              onclick="exibir7()"
+              class="w-[80px] h-[80px] flex justify-center items-center rounded-full bg-[#333333]"
+            >
+              <p class="text-3xl font-semibold text-white">7</p>
+            </button>
+          </div>
+          <div>
+            <button
+              id="8"
+              onclick="exibir8()"
+              class="w-[80px] h-[80px] flex justify-center items-center rounded-full bg-[#333333]"
+            >
+              <p class="text-3xl font-semibold text-white">8</p>
+            </button>
+          </div>
+          <div>
+            <button
+              id="9"
+              onclick="exibir9()"
+              class="w-[80px] h-[80px] flex justify-center items-center rounded-full bg-[#333333]"
+            >
+              <p class="text-3xl font-semibold text-white">9</p>
+            </button>
+          </div>
+          <div>
+            <button
+              class="w-[80px] h-[80px] flex justify-center items-center rounded-full bg-[#FF9F0A]"
+              id="x"
+              onclick="multipicacao()"
+            >
+              <i class="bi bi-x text-5xl text-white" id="icon"></i>
+            </button>
+          </div>
+        </div>
+        <div class="flex gap-[10px]">
+          <div>
+            <button
+              id="4"
+              onclick="exibir4()"
+              class="w-[80px] h-[80px] flex justify-center items-center rounded-full bg-[#333333]"
+            >
+              <p class="text-3xl font-semibold text-white">4</p>
+            </button>
+          </div>
+          <div>
+            <button
+              id="5"
+              onclick="exibir5()"
+              class="w-[80px] h-[80px] flex justify-center items-center rounded-full bg-[#333333]"
+            >
+              <p class="text-3xl font-semibold text-white">5</p>
+            </button>
+          </div>
+          <div>
+            <button
+              id="6"
+              onclick="exibir6()"
+              class="w-[80px] h-[80px] flex justify-center items-center rounded-full bg-[#333333]"
+            >
+              <p class="text-3xl font-semibold text-white">6</p>
+            </button>
+          </div>
+          <div>
+            <button
+              class="w-[80px] h-[80px] flex justify-center items-center rounded-full bg-[#FF9F0A]"
+              id="sub"
+              onclick="subtracao()"
+            >
+              <p class="text-6xl font-semibold text-white">-</p>
+            </button>
+          </div>
+        </div>
+        <div class="flex gap-[10px]">
+          <div>
+            <button
+              id="1"
+              onclick="exibir1()"
+              class="w-[80px] h-[80px] flex justify-center items-center rounded-full bg-[#333333]"
+            >
+              <p class="text-3xl font-semibold text-white">1</p>
+            </button>
+          </div>
+          <div>
+            <button
+              id="2"
+              onclick="exibir2()"
+              class="w-[80px] h-[80px] flex justify-center items-center rounded-full bg-[#333333]"
+            >
+              <p class="text-3xl font-semibold text-white">2</p>
+            </button>
+          </div>
+          <div>
+            <button
+              id="3"
+              onclick="exibir3()"
+              class="w-[80px] h-[80px] flex justify-center items-center rounded-full bg-[#333333]"
+            >
+              <p class="text-3xl font-semibold text-white">3</p>
+            </button>
+          </div>
+          <div>
+            <button
+              class="w-[80px] h-[80px] flex justify-center items-center rounded-full bg-[#FF9F0A]"
+              id="soma"
+              onclick="soma()"
+            >
+              <i class="bi bi-plus text-5xl text-white" id="iconSoma"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex gap-[10px]">
+          <div>
+            <button
+              id="0"
+              onclick="exibir0()"
+              class="w-[170px] h-[80px] flex justify-start items-center rounded-full bg-[#333333] pl-[30px]"
+            >
+              <p class="text-3xl font-semibold text-white">0</p>
+            </button>
+          </div>
+
+          <div>
+            <button
+              id=","
+              onclick="exibirVirgula()"
+              class="w-[80px] h-[80px] flex justify-center items-center rounded-full bg-[#333333]"
+            >
+              <p class="text-3xl font-semibold text-white">,</p>
+            </button>
+          </div>
+          <div>
+            <button
+              class="w-[80px] h-[80px] flex justify-center items-center rounded-full bg-[#FF9F0A]"
+              id="resultado"
+              onclick="exibirResultado()"
+            >
+              <p class="text-5xl font-semibold text-white">=</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
