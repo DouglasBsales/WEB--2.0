@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funcoes-data</title>
+    <script>
+      let data = new Date();
+      /*document.write(
+        data.getDate() +
+          "/" +
+          "0" +
+          (data.getMonth() + 1) +
+          "/" +
+          data.getFullYear()
+      );*/
+
+      // adicionar ou remover dias da data
+
+      /*document.write(data.toString());
+      document.write("<hr>");
+
+      data.setDate(data.getDate() + 1);
+      document.write(data.toString());
+
+      document.write("<br /><br/>" + "<hr>");
+      data.setMonth(data.getMonth() + 1);
+      document.write(data.toString());
+
+      document.write("<br /><br/>" + "<hr>");
+      data.setFullYear(data.getFullYear() + 1);
+      document.write(data.toString()); */
+
+      // realiazndo calculo entre duas datas diferentes;
+      let data1 = new Date(2019, 1, 1);
+      let data2 = new Date(2019, 1, 10);
+      document.write(data1.toString());
+      document.write("<br/><br>" + "<hr>");
+      document.write(data2.toString());
+      document.write("<hr>");
+      document.write(data1.getTime());
+      document.write("<hr>");
+      document.write(data2.getTime());
+
+      // encontrar a quantidade de milessegundos entre as datas setadas
+      document.write("<br/><br>" + "<hr>");
+      let difMiliseegundos = Math.abs(data1.getTime() - data2.getTime());
+      document.write(
+        difMiliseegundos +
+          " = diferença entre os milissegundos das datas setadas"
+      );
+      document.write("<hr>");
+      //1 dia tem 24, cada hora tem 60 minutos, cada minuto tem 60 segundos
+      // cada segundo tem 1000 milisegundos
+      let diaMilissegundos = 1 * 24 * 60 * 60 * 1000;
+      document.write("1 dia tem: " + diaMilissegundos + " Milissegundos");
+      document.write("<br/><br>" + "<hr>");
+      document.write(" diferença dos dias é de: " +difMiliseegundos /diaMilissegundos + " dias"
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
