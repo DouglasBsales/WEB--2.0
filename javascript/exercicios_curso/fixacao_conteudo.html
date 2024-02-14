@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixacao de conteudo</title>
+    <script>
+      function calculo() {
+        let num1 = parseFloat(prompt("Digite um número"));
+        let operacao = prompt(
+          "Digite a operacao desejada: (soma, subtracao, multplicacao ou divisao)"
+        );
+        let num2 = parseFloat(prompt("Digite outro número"));
+
+        let resultado = 0;
+
+        if (operacao == "soma") {
+          resultado = num1 + num2;
+        }
+        if (operacao == "subtracao") {
+          resultado = num1 - num2;
+        }
+
+        if (operacao == "multiplicacao") {
+          resultado = num1 * num2;
+        }
+
+        if (operacao == "divisao") {
+          resultado = num1 / num2;
+        } 
+
+        return resultado;
+      }
+
+      document.write("O resultado da operacao foi: " + calculo());
+    </script>
+  </head>
+  <body></body>
+</html>
