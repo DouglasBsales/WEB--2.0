@@ -331,13 +331,13 @@ function exibir0() {
   }
 }
 
-function exibirVirgula() {
+function exibirPonto() {
   let ac = document.getElementById("ac");
   let c = document.getElementById("c");
   let exibirNumbers = document.getElementById("exibirNumbers");
   let exibirNumbers2 = document.getElementById("exibirNumbers2");
   let conteudoAtual = exibirNumbers.textContent;
-  let virgula = ",";
+  let virgula = ".";
 
   if (exibirNumbers.textContent.length > 5) {
     exibirNumbers.style.fontSize = "54px";
@@ -367,11 +367,9 @@ function exibirVirgula() {
 
 function clearContent() {
   let exibirNumbers = document.getElementById("exibirNumbers");
-  let exibirResultado = document.getElementById("exibirResultado");
   let ac = document.getElementById("ac");
   let c = document.getElementById("c");
 
-  exibirResultado.style.display = "none";
   exibirNumbers.textContent = "0";
   exibirNumbers.style.fontSize = "96px";
 
@@ -405,29 +403,18 @@ function clearContent() {
   sub.style.backgroundColor = "#FF9F0A";
   iconSub.style.color = "#fff";
   sub.style.transition = "0.4s ease";
-
-  // linha de código responsável pela exibicao do 1 numero
-  let exibirNumbers2 = document.getElementById("exibirNumbers2");
-
-  exibirNumbers.style.display = "block";
-  exibirNumbers2.style.display = "none";
 }
 
 // a cima funcoes de exibicao dos numbers na tela da calculadora
 
 // a baixo funcoes dos buttons para realizar as operacoes aritméticas
-
+// icone de multiplicacao para mudar a cor
 function multipicacao() {
   let exibirNumbers = document.getElementById("exibirNumbers");
-  let exibirNumbers2 = document.getElementById("exibirNumbers2");
-
-  exibirNumbers2.textContent = "0";
-  // linha de código responsável para exibir a outra parte do numero que irá ser somado
-  exibirNumbers.style.display = "none";
-  exibirNumbers2.style.display = "block";
-  exibirNumbers2.style.fontSize = "96px";
-
   let mult = document.getElementById("x");
+  let exibirMult = "*";
+  exibirNumbers.textContent += exibirMult;
+
   let icon = document.getElementById("icon");
   mult.style.backgroundColor = "#fff";
   icon.style.color = "#FF9F0A";
@@ -436,46 +423,36 @@ function multipicacao() {
 
 function divisao() {
   let exibirNumbers = document.getElementById("exibirNumbers");
-  let exibirNumbers2 = document.getElementById("exibirNumbers2");
-  exibirNumbers2.textContent = "0";
-  // linha de código responsável para exibir a outra parte do numero que irá ser somado
-  exibirNumbers.style.display = "none";
-  exibirNumbers2.style.display = "block";
-  exibirNumbers2.style.fontSize = "96px";
 
   let divisao = document.getElementById("divisao");
+  let exibirDiv = "/";
+  exibirNumbers.textContent += exibirDiv;
   let iconDiv = document.getElementById("iconDiv");
   divisao.style.backgroundColor = "#fff";
   iconDiv.style.color = "#FF9F0A";
   divisao.style.transition = "0.4s ease";
 }
-
+// icone de soma para mudar a cor
 function soma() {
   let exibirNumbers = document.getElementById("exibirNumbers");
-  let exibirNumbers2 = document.getElementById("exibirNumbers2");
-  exibirNumbers2.textContent = "0";
-  // linha de código responsável para exibir a outra parte do numero que irá ser somado
-  exibirNumbers.style.display = "none";
-  exibirNumbers2.style.display = "block";
-  exibirNumbers2.style.fontSize = "96px";
 
   let soma = document.getElementById("soma");
+  let exibirSoma = "+";
+  exibirNumbers.textContent += exibirSoma;
   let iconSoma = document.getElementById("iconSoma");
   soma.style.backgroundColor = "#fff";
   iconSoma.style.color = "#FF9F0A";
   soma.style.transition = "0.4s ease";
 }
 
+// icone de subtracao para mudar a cor
 function subtracao() {
   let exibirNumbers = document.getElementById("exibirNumbers");
-  let exibirNumbers2 = document.getElementById("exibirNumbers2");
-  exibirNumbers2.textContent = "0";
-  // linha de código responsável para exibir a outra parte do numero que irá ser somado
-  exibirNumbers.style.display = "none";
-  exibirNumbers2.style.display = "block";
-  exibirNumbers2.style.fontSize = "96px";
-
   let sub = document.getElementById("sub");
+  let exibirSub = "-";
+
+  exibirNumbers.textContent += exibirSub;
+
   let iconSub = document.getElementById("iconSub");
   sub.style.backgroundColor = "#fff";
   iconSub.style.color = "#FF9F0A";
@@ -484,22 +461,21 @@ function subtracao() {
 
 function exibirResultado() {
   let exibirNumbers = document.getElementById("exibirNumbers");
-  let exibirNumbers2 = document.getElementById("exibirNumbers2");
-  let exibirResultado = document.getElementById("exibirResultado");
+  console.log(exibirNumbers.textContent);
 
-  if (exibirResultado.textContent.length <= 5) {
-    exibirResultado.style.fontSize = "96px";
-  } else {
-    exibirResultado.style.fontSize = "54px";
+  if (exibirNumbers.textContent.includes("-")) {
+    exibirNumbers.textContent = eval(exibirNumbers.textContent);
   }
 
-  exibirNumbers2.style.display = "none";
-  exibirNumbers.style.display = "none";
-  exibirResultado.style.display = "block";
+  if (exibirNumbers.textContent.includes("+")) {
+    exibirNumbers.textContent = eval(exibirNumbers.textContent);
+  }
 
-  let numero1 = parseFloat(exibirNumbers.textContent);
-  let numero2 = parseFloat(exibirNumbers2.textContent);
-  let multiplicacao = numero1 * numero2;
+  if (exibirNumbers.textContent.includes("*")) {
+    exibirNumbers.textContent = eval(exibirNumbers.textContent);
+  }
 
-  exibirResultado.textContent = multiplicacao;
+  if (exibirNumbers.textContent.includes("/")) {
+    exibirNumbers.textContent = eval(exibirNumbers.textContent);
+  }
 }
