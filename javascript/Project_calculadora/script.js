@@ -4,7 +4,6 @@ function exibir7() {
   let ac = document.getElementById("ac");
   let c = document.getElementById("c");
   let exibirNumbers = document.getElementById("exibirNumbers");
-  let exibirNumbers2 = document.getElementById("exibirNumbers2");
   let number7 = "7";
 
   if (exibirNumbers.textContent.length > 5) {
@@ -18,27 +17,12 @@ function exibir7() {
     } else {
       exibirNumbers.textContent += number7;
     }
-
-  // Para o segundo número
-  if (exibirNumbers2.textContent.length > 5) {
-    exibirNumbers2.style.fontSize = "54px";
-  }
-  if (exibirNumbers2.textContent.length < 11) {
-    if (exibirNumbers2.textContent === "0") {
-      exibirNumbers2.textContent = number7;
-      ac.style.display = "none";
-      c.style.display = "block";
-    } else {
-      exibirNumbers2.textContent += number7;
-    }
-  }
 }
 
 function exibir8() {
   let ac = document.getElementById("ac");
   let c = document.getElementById("c");
   let exibirNumbers = document.getElementById("exibirNumbers");
-  let exibirNumbers2 = document.getElementById("exibirNumbers2");
   let number8 = "8";
 
   if (exibirNumbers.textContent.length > 5) {
@@ -52,26 +36,12 @@ function exibir8() {
     } else {
       exibirNumbers.textContent += number8;
     }
-
-  if (exibirNumbers2.textContent.length > 5) {
-    exibirNumbers2.style.fontSize = "54px";
-  }
-  if (exibirNumbers2.textContent.length < 11) {
-    if (exibirNumbers2.textContent === "0") {
-      exibirNumbers2.textContent = number8;
-      ac.style.display = "none";
-      c.style.display = "block";
-    } else {
-      exibirNumbers2.textContent += number8;
-    }
-  }
 }
 
 function exibir9() {
   let ac = document.getElementById("ac");
   let c = document.getElementById("c");
   let exibirNumbers = document.getElementById("exibirNumbers");
-  let exibirNumbers2 = document.getElementById("exibirNumbers2");
   let number9 = "9";
 
   if (exibirNumbers.textContent.length > 5) {
@@ -85,26 +55,12 @@ function exibir9() {
     } else {
       exibirNumbers.textContent += number9;
     }
-
-  if (exibirNumbers2.textContent.length > 5) {
-    exibirNumbers2.style.fontSize = "54px";
-  }
-  if (exibirNumbers2.textContent.length < 11) {
-    if (exibirNumbers2.textContent === "0") {
-      exibirNumbers2.textContent = number9;
-      ac.style.display = "none";
-      c.style.display = "block";
-    } else {
-      exibirNumbers2.textContent += number9;
-    }
-  }
 }
 
 function exibir4() {
   let ac = document.getElementById("ac");
   let c = document.getElementById("c");
   let exibirNumbers = document.getElementById("exibirNumbers");
-  let exibirNumbers2 = document.getElementById("exibirNumbers2");
   let number4 = "4";
 
   if (exibirNumbers.textContent.length > 5) {
@@ -118,26 +74,12 @@ function exibir4() {
     } else {
       exibirNumbers.textContent += number4;
     }
-
-  if (exibirNumbers2.textContent.length > 5) {
-    exibirNumbers2.style.fontSize = "54px";
-  }
-  if (exibirNumbers2.textContent.length < 11) {
-    if (exibirNumbers2.textContent === "0") {
-      exibirNumbers2.textContent = number4;
-      ac.style.display = "none";
-      c.style.display = "block";
-    } else {
-      exibirNumbers2.textContent += number4;
-    }
-  }
 }
 
 function exibir5() {
   let ac = document.getElementById("ac");
   let c = document.getElementById("c");
   let exibirNumbers = document.getElementById("exibirNumbers");
-  let exibirNumbers2 = document.getElementById("exibirNumbers2");
   let number5 = "5";
 
   if (exibirNumbers.textContent.length > 5) {
@@ -151,26 +93,12 @@ function exibir5() {
     } else {
       exibirNumbers.textContent += number5;
     }
-
-  if (exibirNumbers2.textContent.length > 5) {
-    exibirNumbers2.style.fontSize = "54px";
-  }
-  if (exibirNumbers2.textContent.length < 11) {
-    if (exibirNumbers2.textContent === "0") {
-      exibirNumbers2.textContent = number5;
-      ac.style.display = "none";
-      c.style.display = "block";
-    } else {
-      exibirNumbers2.textContent += number5;
-    }
-  }
 }
 
 function exibir6() {
   let ac = document.getElementById("ac");
   let c = document.getElementById("c");
   let exibirNumbers = document.getElementById("exibirNumbers");
-  let exibirNumbers2 = document.getElementById("exibirNumbers2");
   let number6 = "6";
 
   if (exibirNumbers.textContent.length > 5) {
@@ -184,26 +112,12 @@ function exibir6() {
     } else {
       exibirNumbers.textContent += number6;
     }
-
-  if (exibirNumbers2.textContent.length > 5) {
-    exibirNumbers2.style.fontSize = "54px";
-  }
-  if (exibirNumbers2.textContent.length < 11) {
-    if (exibirNumbers2.textContent === "0") {
-      exibirNumbers2.textContent = number6;
-      ac.style.display = "none";
-      c.style.display = "block";
-    } else {
-      exibirNumbers2.textContent += number6;
-    }
-  }
 }
 
 function exibir1() {
   let ac = document.getElementById("ac");
   let c = document.getElementById("c");
   let exibirNumbers = document.getElementById("exibirNumbers");
-  let exibirNumbers2 = document.getElementById("exibirNumbers2");
   let number1 = "1";
 
   if (exibirNumbers.textContent.length > 5) {
@@ -217,26 +131,12 @@ function exibir1() {
     } else {
       exibirNumbers.textContent += number1;
     }
-
-  if (exibirNumbers2.textContent.length > 5) {
-    exibirNumbers2.style.fontSize = "54px";
-  }
-  if (exibirNumbers2.textContent.length < 11) {
-    if (exibirNumbers2.textContent === "0") {
-      exibirNumbers2.textContent = number1;
-      ac.style.display = "none";
-      c.style.display = "block";
-    } else {
-      exibirNumbers2.textContent += number1;
-    }
-  }
 }
 
 function exibir2() {
   let ac = document.getElementById("ac");
   let c = document.getElementById("c");
   let exibirNumbers = document.getElementById("exibirNumbers");
-  let exibirNumbers2 = document.getElementById("exibirNumbers2");
   let number2 = "2";
 
   if (exibirNumbers.textContent.length > 5) {
@@ -250,26 +150,12 @@ function exibir2() {
     } else {
       exibirNumbers.textContent += number2;
     }
-
-  if (exibirNumbers2.textContent.length > 5) {
-    exibirNumbers2.style.fontSize = "54px";
-  }
-  if (exibirNumbers2.textContent.length < 11) {
-    if (exibirNumbers2.textContent === "0") {
-      exibirNumbers2.textContent = number2;
-      ac.style.display = "none";
-      c.style.display = "block";
-    } else {
-      exibirNumbers2.textContent += number2;
-    }
-  }
 }
 
 function exibir3() {
   let ac = document.getElementById("ac");
   let c = document.getElementById("c");
   let exibirNumbers = document.getElementById("exibirNumbers");
-  let exibirNumbers2 = document.getElementById("exibirNumbers2");
   let number3 = "3";
 
   if (exibirNumbers.textContent.length > 5) {
@@ -283,26 +169,12 @@ function exibir3() {
     } else {
       exibirNumbers.textContent += number3;
     }
-
-  if (exibirNumbers2.textContent.length > 5) {
-    exibirNumbers2.style.fontSize = "54px";
-  }
-  if (exibirNumbers2.textContent.length < 11) {
-    if (exibirNumbers2.textContent === "0") {
-      exibirNumbers2.textContent = number3;
-      ac.style.display = "none";
-      c.style.display = "block";
-    } else {
-      exibirNumbers2.textContent += number3;
-    }
-  }
 }
 
 function exibir0() {
   let ac = document.getElementById("ac");
   let c = document.getElementById("c");
   let exibirNumbers = document.getElementById("exibirNumbers");
-  let exibirNumbers2 = document.getElementById("exibirNumbers2");
   let number0 = "0";
 
   if (exibirNumbers.textContent.length > 5) {
@@ -316,26 +188,12 @@ function exibir0() {
     } else {
       exibirNumbers.textContent += number0;
     }
-
-  if (exibirNumbers2.textContent.length > 5) {
-    exibirNumbers2.style.fontSize = "54px";
-  }
-  if (exibirNumbers2.textContent.length < 11) {
-    if (exibirNumbers2.textContent === "0") {
-      exibirNumbers2.textContent = number0;
-      ac.style.display = "none";
-      c.style.display = "block";
-    } else {
-      exibirNumbers2.textContent += number0;
-    }
-  }
 }
 
 function exibirPonto() {
   let ac = document.getElementById("ac");
   let c = document.getElementById("c");
   let exibirNumbers = document.getElementById("exibirNumbers");
-  let exibirNumbers2 = document.getElementById("exibirNumbers2");
   let conteudoAtual = exibirNumbers.textContent;
   let virgula = ".";
 
@@ -350,19 +208,6 @@ function exibirPonto() {
     } else {
       exibirNumbers.textContent += virgula;
     }
-
-  if (exibirNumbers2.textContent.length > 5) {
-    exibirNumbers2.style.fontSize = "54px";
-  }
-  if (exibirNumbers2.textContent.length < 11) {
-    if (exibirNumbers2.textContent === "0") {
-      exibirNumbers2.textContent = virgula;
-      ac.style.display = "none";
-      c.style.display = "block";
-    } else {
-      exibirNumbers2.textContent += virgula;
-    }
-  }
 }
 
 function clearContent() {
@@ -463,19 +308,12 @@ function exibirResultado() {
   let exibirNumbers = document.getElementById("exibirNumbers");
   console.log(exibirNumbers.textContent);
 
-  if (exibirNumbers.textContent.includes("-")) {
-    exibirNumbers.textContent = eval(exibirNumbers.textContent);
-  }
-
-  if (exibirNumbers.textContent.includes("+")) {
-    exibirNumbers.textContent = eval(exibirNumbers.textContent);
-  }
-
-  if (exibirNumbers.textContent.includes("*")) {
-    exibirNumbers.textContent = eval(exibirNumbers.textContent);
-  }
-
-  if (exibirNumbers.textContent.includes("/")) {
+  if (
+    exibirNumbers.textContent.includes("-") ||
+    exibirNumbers.textContent.includes("+") ||
+    exibirNumbers.textContent.includes("*") ||
+    exibirNumbers.textContent.includes("/")
+  ) {
     exibirNumbers.textContent = eval(exibirNumbers.textContent);
   }
 }
