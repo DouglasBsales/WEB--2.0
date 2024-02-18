@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcular tempo vivido</title>
+    <script>
+      function verificarTempoVivido() {
+        let anoNascimento = new Date()
+        let anoAtual = new Date();
+
+        let difEntreMilissegundos = Math.abs(
+          anoNascimento.getTime() - anoAtual.getTime()
+        );
+        let miliDias = 24 * 60 * 60 * 1000;
+        let miliMonths = 30 * 24 * 60 * 60 * 1000;
+        let dias = difEntreMilissegundos / miliDias;
+        let months = difEntreMilissegundos / miliMonths;
+        let anos = Math.abs(
+          anoNascimento.getFullYear() - anoAtual.getFullYear()
+        );
+
+        console.log(
+          `Você ja viviveu: ${anos} anos, ${Math.floor(
+            months
+          )} meses e ${Math.floor(dias)} dias.`
+        );
+      }
+
+      verificarTempoVivido();
+    </script>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="ano"
+      placeholder="Digite sua data de nascimento"
+      style="width: 300px"
+    />
+
+    <button onclick="verificarTempoVivido()">
+      <p>Verificar tempo vivido</p>
+    </button>
+  </body>
+</html>
