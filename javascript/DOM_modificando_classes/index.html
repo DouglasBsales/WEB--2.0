@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modificando classes</title>
+    <style>
+      .style1 {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+
+      .style2 {
+        width: 500px;
+        height: 500px;
+        background-color: blue;
+      }
+    </style>
+    <script>
+      function modificarStyle() {
+        let valor = document.getElementById("div");
+        if (valor.classList.contains("style1")) {
+          valor.classList.remove("style1");
+          valor.classList.add("style2");
+        } else {
+          valor.classList.remove("style2");
+          valor.classList.add("style1");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div
+      class="style1"
+      id="div"
+      style="display: flex; justify-content: center; align-items: center"
+    >
+      <p>Texto aqui</p>
+    </div>
+
+    <button style="margin-top: 20px" onclick="modificarStyle()">
+      <p>Modificar classe</p>
+    </button>
+  </body>
+</html>

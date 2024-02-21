@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input range</title>
+    <script>
+      function minhaFuncao() {
+        let valor = document.getElementById("teste").value;
+        let resultado = document.getElementById("exibirResultado");
+        resultado.textContent = valor;
+      }
+    </script>
+  </head>
+  <body style="display: flex">
+    <input
+      type="range"
+      id="teste"
+      min="0"
+      max="15"
+      onchange="minhaFuncao()"
+      style="cursor: pointer"
+    />
+    <p style="margin-left: 20px; font-size: 18px" id="exibirResultado">8</p>
+  </body>
+</html>
