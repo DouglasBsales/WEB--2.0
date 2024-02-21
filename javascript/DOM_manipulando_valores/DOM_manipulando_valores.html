@@ -8,6 +8,7 @@
       function distribuiCaracter() {
         let caracter = document.getElementById("entrada").value;
         document.getElementById("entrada").value = "";
+        console.log(caracter);
 
         caracter.trim();
 
@@ -30,6 +31,8 @@
         }
       }
 
+      document.addEventListener("keyup", distribuiCaracter);
+
       function clearLetras() {
         document.getElementById("letras").value = "";
       }
@@ -40,12 +43,7 @@
     </script>
   </head>
   <body>
-    <input
-      type="text"
-      placeholder="Digite um caracter aqui"
-      id="entrada"
-      onkeyup="distribuiCaracter()"
-    />
+    <input type="text" placeholder="Digite um caracter aqui" id="entrada" />
 
     <span></span>
     <input type="text" placeholder="letras" disabled id="letras" />

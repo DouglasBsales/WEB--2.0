@@ -1,22 +1,16 @@
-function numeroPrimo(number) {
-    let ehPrimo = true;
-  
-    if (number <= 1) {
-      ehPrimo = false;
-    } else {
-      for (let i = 2; i <= Math.sqrt(number); i++) {
-        if (number % i === 0) {
-          ehPrimo = false;
-          break;
-        }
-      }
-    }
-  
-    if (ehPrimo) {
-      console.log("Esse número é primo");
-    } else {
-      console.log("Esse número não é primo");
-    }
-  }
-  
-  numeroPrimo(6);
+function calcularIdade() {
+  let data1 = new Date(1999, 5, 8);
+  let data2 = new Date();
+
+  let difMilissegundosDatas = Math.abs(data1.getTime() - data2.getTime());
+  let milissegundosDia = 24 * 60 * 60 * 1000;
+  let milissegundosMeses = 30 * 24 * 60 * 60 * 1000;
+
+  let difAnos = Math.abs(data1.getFullYear() - data2.getFullYear());
+  let difMeses = difMilissegundosDatas / milissegundosMeses;
+  let difDias = difMilissegundosDatas / milissegundosDia;
+
+  return console.log(`Você viveu ${difAnos} anos. ${difMeses.toFixed()} meses. e ${difDias.toFixed()} dias de vida.`)
+}
+
+calcularIdade();
