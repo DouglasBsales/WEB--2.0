@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function distribuiCaracter() {
+        let caracter = document.getElementById("entrada").value;
+        document.getElementById("entrada").value = "";
+
+        caracter.trim();
+
+        switch (caracter) {
+          case "0":
+          case "1":
+          case "2":
+          case "3":
+          case "4":
+          case "5":
+          case "6":
+          case "7":
+          case "8":
+          case "9":
+            document.getElementById("number").value += caracter;
+            break;
+
+          default: // adicionar campos referentes a letras
+            document.getElementById("letras").value += caracter;
+        }
+      }
+
+      function clearLetras() {
+        document.getElementById("letras").value = "";
+      }
+
+      function clearNumbers() {
+        document.getElementById("number").value = "";
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      type="text"
+      placeholder="Digite um caracter aqui"
+      id="entrada"
+      onkeyup="distribuiCaracter()"
+    />
+
+    <span></span>
+    <input type="text" placeholder="letras" disabled id="letras" />
+    <span>
+      <button onclick="clearLetras()">
+        <p>Limpar Letras</p>
+      </button>
+    </span>
+
+    <span>Números</span>
+    <input type="text" placeholder="Números" disabled id="number" />
+    <span>
+      <button onclick="clearNumbers()">
+        <p>Limpar números</p>
+      </button>
+    </span>
+  </body>
+</html>
