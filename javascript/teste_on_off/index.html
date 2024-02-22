@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>On-off</title>
+    <style>
+      .estado1Button {
+        width: 140px;
+        border-radius: 40px;
+        display: flex;
+        background-color: rgba(255, 0, 0, 0.795);
+        border: none;
+        position: absolute;
+        border: 5px solid #cccccc;
+      }
+
+      .estado2Button {
+        width: 140px;
+        border-radius: 40px;
+        display: flex;
+        background-color: #00f600de;
+        border: none;
+        position: absolute;
+        border: 5px solid #cccccc;
+      }
+
+      .estado1 {
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        background-color: #fffffff1;
+        left: 5px;
+        position: relative;
+        border: 2px solid #cccccc;
+        transition: all 0.4s ease;
+      }
+
+      .estado2 {
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        background-color: #fffffff1;
+        position: relative;
+        left: 75px;
+        border: 2px solid #cccccc;
+        transition: all 0.4s ease;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    "
+  >
+    <button class="estado1Button" id="button">
+      <p class="estado1" id="iconButton"></p>
+    </button>
+  </body>
+  <script src="script.js"></script>
+</html>
