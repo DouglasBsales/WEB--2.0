@@ -1,6 +1,10 @@
-let numeroPassado = 6;
-if (numeroPassado % 2 === 0) {
-  console.log(numeroPassado + ":  esse número é par");
-} else {
-  console.log(numeroPassado + ":  esse número não é par");
+let i = 1;
+let x = 1;
+while (i < 10) {
+  x = 1;
+  while (x < 10) {
+    console.log(`${i} x ${x} = ${i * x}`);
+    x++;
+  }
+  i++;
 }

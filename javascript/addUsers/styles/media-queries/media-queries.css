@@ -1,0 +1,17 @@
+@media (max-width: 1030px) {
+  #divPai {
+    width: 100%;
+  }
+}
+
+@media (max-width: 806px) {
+  #divIcone {
+    width: 40%;
+  }
+}
+
+@media (max-width: 620px) {
+  #divIcone {
+    display: none;
+  }
+}
