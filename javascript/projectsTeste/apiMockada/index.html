@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste api mockada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="pt-[100px] pl-[50px]" id="carregando">
+      <h1>Carregando...</h1>
+    </div>
+    <div id="paiComments" class="pt-[100px] pl-[50px]"></div>
+    <div class="w-[400px] pl-[50px]">
+      <form id="form" class="flex flex-col gap-[10px] pb-[100px]">
+        <input
+          type="text"
+          class="border pl-[10px] outline-none"
+          placeholder="Nome completo"
+          id="name"
+        />
+        <input
+          type="text"
+          class="border pl-[10px] outline-none"
+          placeholder="Email"
+          id="email"
+        />
+        <textarea
+          class="w-[400px] h-[150px] outline-none border border-[#CCCCCC] rounded-md"
+          id="comment"
+        ></textarea>
+        <input
+          type="submit"
+          value="enviar"
+          class="border w-[100px] h-[50px] rounded-md bg-[#202020] text-white"
+        />
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

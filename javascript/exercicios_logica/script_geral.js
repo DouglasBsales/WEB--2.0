@@ -1,9 +1,10 @@
-let i = 1;
-while (i < 10) {
-  x = 1;
-  while (x < 10) {
-    console.log(`${i} x ${x} = ${i * x}`);
-    x++;
+function soma() {
+  let resultado = 0;
+  for (i = 0; i < arguments.length; i++) {
+    resultado += arguments[i];
   }
-  i++;
+
+  return console.log(resultado);
 }
+
+soma(2, 2, 2);
