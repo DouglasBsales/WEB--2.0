@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teste api mockada</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <div class="pt-[100px] pl-[50px]" id="carregando">
       <h1>Carregando...</h1>
     </div>
     <div id="paiComments" class="pt-[100px] pl-[50px]"></div>
-    <div class="w-[400px] pl-[50px]">
-      <form id="form" class="flex flex-col gap-[10px] pb-[100px]">
+    <div class="w-[500px] pl-[50px]">
+      <form id="form" class="flex flex-col gap-[10px] pb-[100px] pt-[50px]">
         <input
           type="text"
           class="border pl-[10px] outline-none"
@@ -33,6 +37,7 @@
           type="submit"
           value="enviar"
           class="border w-[100px] h-[50px] rounded-md bg-[#202020] text-white"
+          onclick="sendComment()"
         />
       </form>
     </div>
