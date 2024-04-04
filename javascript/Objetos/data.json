@@ -1,0 +1,30 @@
+[
+  {
+    "products": {
+      "computador": {
+        "preco": 2500,
+        "status": "Disponível",
+        "unidades": 25
+      },
+      "notebook": {
+        "preco": 4500,
+        "status": "Disponível",
+        "unidades": 10
+      },
+      "Consoles": {
+        "playstation": {
+          "2": {
+            "preco": 400,
+            "status": "disponível",
+            "unidades": "32"
+          },
+          "3": {
+            "preco": 700,
+            "status": "disponível",
+            "unidades": "4"
+          }
+        }
+      }
+    }
+  }
+]

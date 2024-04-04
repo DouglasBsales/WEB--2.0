@@ -1,40 +1,26 @@
 {
   "comments": [
     {
-      "body": "Quero expressar minha sincera gratidão pela excelente experiência de compra que tive. Desde a facilidade de navegação no site até a entrega pontual dos produtos, tudo foi excepcional. O atendimento ao cliente foi além das minhas expectativas, demonstrando um compromisso genuíno com a satisfação do cliente. Parabéns pela qualidade do serviço!",
-      "name": "Elisangela castro silva",
-      "email": "elisangela@teste.com",
-      "id": "2b13"
+      "id": "6837",
+      "body": "awiudhiusdhsiudhsdsdd",
+      "email": "douglas-1084@hotmail.com",
+      "name": "Matheus rocha",
+      "photo_perfil": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
     },
     {
-      "body": "Compreendo sua posição, no entanto, acredito que é fundamental considerar todas as perspectivas deste debate. A complexidade das questões políticas exige uma análise cuidadosa de cada ponto de vista para encontrar soluções abrangentes e equitativas. É através do diálogo construtivo e do respeito mútuo que podemos avançar na direção de um futuro mais justo e inclusivo para todos.",
-      "name": "rodrigo santos amaral",
-      "email": "email@example.com",
-      "id": "f89b"
-    },
+      "id": "469f",
+      "body": "Estou muito contente por ter conseguido execultar essa mini aplicação e ter aprendido mais sobre APIS no quesito geral ",
+      "email": "douglas-1084@hotmail.com",
+      "name": "Douglas barbosa sales ",
+      "photo_perfil": "https://musicnonstop.uol.com.br/wp-content/uploads/2023/12/Pokemon-1024x576.jpg"
+    }
+  ],
+  "users": [
     {
-      "id": "f9a3",
-      "body": "Rocha é ruim no cs e todo mundo sabe disso",
-      "email": "rochinha123@gmail.com",
-      "name": "Mateus rocha"
-    },
-    {
-      "id": "ccbf",
-      "body": " ROCHA É MT RUIM NO CS E TODO MUNDO SABE DISSO ",
-      "email": "dougsales.dev@gmail.com",
-      "name": "Douglas sales"
-    },
-    {
-      "id": "b6ed",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod accusamus natus tenetur dolor, ab dolorem consequatur provident nemo sint, deserunt quam ipsa eveniet dignissimos quisquam id quo perspiciatis voluptatum. Accusamus.",
-      "email": "rochinha123@gmail.com",
-      "name": "Matheus rocha"
-    },
-    {
-      "id": "5e3f",
-      "body": "AOISJDOIQWEJQOIEJASJDHASIDJHQWOEIJASOKDAMSDQWEQWED",
-      "email": "rosi@gmail.com",
-      "name": "rosimeire barbosa sales"
+      "name": "Douglas sales",
+      "age": "25",
+      "adress": "Paulista, Pernambuco - brasil",
+      "cep": "53070200"
     }
   ]
 }
