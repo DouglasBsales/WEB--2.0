@@ -5,35 +5,26 @@ produto.nome = "notebook";
 produto.preco = 1999;
 produto.status = "Disponível";
 
-const infoProducts = [
+class products {
+  constructor(nome, preco, status) {
+    this.nome = nome;
+    this.preco = preco;
+    this.status = status;
+  }
+}
+
+const arrayProducts = [
   {
-    products: {
-      computador: {
-        preco: 2500,
-        status: "Disponível",
-        unidades: 25,
-      },
-      notebook: {
-        preco: 4500,
-        status: "Disponível",
-        unidades: 10,
-      },
-      Consoles: {
-        playstation: {
-          2: {
-            preco: 400,
-            status: "disponível",
-            unidades: "32",
-          },
-          3: {
-            preco: 700,
-            status: "disponível",
-            unidades: "4",
-          },
-        },
-      },
-    },
+    eletronicos: [],
   },
 ];
 
-console.log(infoProducts);
+function addNewProduct(nome, preco, status) {
+  const newProduct = new products(nome, preco, status);
+  arrayProducts[0].eletronicos.push(newProduct);
+}
+
+addNewProduct("Pc GAMER", 1200, "disponível");
+addNewProduct("Pc NORMAL", 800, "disponível");
+addNewProduct("Console XBOX 360", 500, "disponível");
+console.log(arrayProducts);
