@@ -28,3 +28,5 @@ addNewProduct("Pc GAMER", 1200, "disponível");
 addNewProduct("Pc NORMAL", 800, "disponível");
 addNewProduct("Console XBOX 360", 500, "disponível");
 console.log(arrayProducts);
+
+
