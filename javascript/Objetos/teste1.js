@@ -68,6 +68,7 @@ const pokeCharmander = {
 
 Object.setPrototypeOf(pokeCharmander, pokemon);
 console.log(pokeCharmander.infosPokemon())
+console.log(pokeCharmander)
 
 
 const pokeSquartel = {
